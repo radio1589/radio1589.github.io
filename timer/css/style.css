@@ -1,0 +1,14 @@
+
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+    text-align: center;
+}
+
+.timer {
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
