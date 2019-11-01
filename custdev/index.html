@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Customer Development</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap&subset=cyrillic-ext"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="page__header">
+        <div class="container">
+
+            <!-- Header Top -->
+            <nav class="page__header-nav">
+                <span class="close-mobile-menu-btn">
+                    <svg class="ham hamRotate180 ham5" viewBox="0 0 100 100" width="80"
+                        onclick="this.classList.toggle('active')">
+                        <path class="line top"
+                            d="m 30,33 h 40 c 0,0 8.5,-0.68551 8.5,10.375 0,8.292653 -6.122707,9.002293 -8.5,6.625 l -11.071429,-11.071429">
+                        </path>
+                        <path class="line middle" d="m 70,50 h -40"></path>
+                        <path class="line bottom"
+                            d="m 30,67 h 40 c 0,0 8.5,0.68551 8.5,-10.375 0,-8.292653 -6.122707,-9.002293 -8.5,-6.625 l -11.071429,11.071429">
+                        </path>
+                    </svg>
+                </span>
+                <!-- Cities Nav -->
+                <ul class="nav-list nav-list--cities">
+                    <li class="nav-list__item nav-list__item--cities">
+                        <a class="nav-list__link nav-list__link--first
+                            nav-list__link--cities" href="#">
+                            Санкт-Петербург
+                        </a>
+                    </li>
+                    <li class="nav-list__item nav-list__item--cities">
+                        <a class="nav-list__link nav-list__link--cities" href="#">
+                            Москва
+                        </a>
+                    </li>
+                    <li class="nav-list__item nav-list__item--cities">
+                        <a class="nav-list__link nav-list__link--cities" href="#">
+                            Минск
+                        </a>
+                    </li>
+                </ul>
+
+                <select name="cities" id="" class="cities__select">
+                    <option value="">Санкт-Петербург</option>
+                    <option value="">Москва</option>
+                    <option value="">Минск</option>
+                </select>
+
+                <!-- Site Nav -->
+                <ul class="nav-list nav-list--site">
+                    <li class="nav-list__item">
+                        <a  class="nav-list__link" href="#programm">
+                            Программа
+                        </a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a class="nav-list__link" href="#reviews">
+                            Отзывы
+                        </a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a  class="nav-list__link" href="#price">
+                            Стоимость
+                        </a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a class="nav-list__link" href="#teacher">
+                            О преподавателе
+                        </a>
+                    </li>
+                </ul>
+
+                <button class="btn btn--enroll">
+                    Запись на курс
+                </button>
+            </nav>
+
+            <!-- Jumbotron -->
+            <section class="jumbotron">
+                <div class="row">
+
+                    <!-- Left Col -->
+                    <div class="col col-12 col-md-6 jumbotron__col jumbotron__col--left">
+                        <div class="wimprof">
+                            <span class=wimprof__text>
+                                Оценка
+                            </span>
+                            <strong class="wimprof__rate">
+                                9 из 10
+                            </strong>
+                            <span class=wimprof__text>
+                                Иван Матвиенко
+                            </span>
+                            <strong>
+                                Wimprof
+                            </strong>
+                            <a href="#" class="wimprof__link">
+                                Читать отзыв
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right Col -->
+                    <div class="col col-12 col-md-6 jumbotron__col jumbotron__col--right">
+                        <span class="jumbotron__date">
+                            Санкт-Петербург 10-21 мая
+                        </span>
+                        <h1 class="title jumbotron__title">
+                            Начни делать
+                            Customer Development
+                            и проверять гипотезы
+                        </h1>
+                        <span class="jumbotron__note">
+                            На оффлайн курсе из 5 воркшопов
+                        </span>
+                        <button class="btn btn--jumbotron">
+                            Записаться
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section class="about">
+        <div class="container">
+            <div class="row">
+
+                <!-- Left Col -->
+                <div class="col col-12 col-lg-6 about__col about__col--left">
+                    <h2 class="about__title">
+                        Если вы не делаете Customer Development —
+                        вы не управляете движением
+                        к product-market fit
+                    </h2>
+                </div>
+
+                <!-- Right Col -->
+                <div class="col col-12 col-lg-6 about__col about__col--right">
+                    <div class="row">
+                        <!-- Item -->
+                        <div class="about__item col col-12 col-md-6">
+                            <strong class="about__item-title">
+                                94%
+                            </strong>
+                            <p class="about__item-text">
+                                стартапов умирают в течение 3 лет,
+                                и главная причина этого —
+                                отсутствие product-market fit
+                            </p>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="about__item col col-12 col-md-6">
+                            <strong class="about__item-title">
+                                менее 50%
+                            </strong>
+                            <p class="about__item-text">
+                                тестируемых Amazon функций
+                                реально запускаются после
+                                проверки гипотез
+                            </p>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="about__item col col-12 col-md-6">
+                            <strong class="about__item-title">
+                                только 50%
+                            </strong>
+                            <p class="about__item-text">
+                                компаний по результатам исследования SaaS
+                                проводят многовариантные A / B тестирования
+                            </p>
+                        </div>
+
+                        <!-- Item -->
+                        <div class="about__item col col-12 col-md-6">
+                            <strong class="about__item-title">
+                                от 40% до 90%
+                            </strong>
+                            <p class="about__item-text">
+                                новых продуктов не получают значительного
+                                признания на рынке, так как строятся на основе
+                                творчества, интуиции и интеллекта
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Whom -->
+
+    <section class="for-whom">
+        <div class="container">
+            <div class="row">
+
+                <h2 class="for-whom__title">
+                    Кому и зачем знать
+                    Customer Development
+                </h2>
+
+                <!-- Items -->
+                <div class="row for-whom__col-holder">
+
+                    <!-- Item -->
+                    <div class=" for-whom__col">
+                        <h3 class="for-whom__subtitle">
+                            Продуктовому дизайнеру
+                        </h3>
+                        <p class="for-whom__text">
+                            лучше узнать потребность клиента и научиться
+                            быстро проверять прототипы и макеты на
+                            пользователях чтобы исправлять ошибки
+                            и делать интерфейсы кратно качественнее
+                        </p>
+                    </div>
+
+                    <!-- Item -->
+                    <div class=" for-whom__col">
+                        <h3 class="for-whom__subtitle">
+                            Продакт-менеджерам
+                        </h3>
+                        <p class="for-whom__text">
+                            идеально знать мотивацию своих
+                            пользователей и принимать
+                            продуктовые решения быстрее и
+                            значительно качественнее
+                        </p>
+                    </div>
+
+                    <!-- Item -->
+                    <div class=" for-whom__col">
+                        <h3 class="for-whom__subtitle">
+                            Оснавателям стартапов
+                        </h3>
+                        <p class="for-whom__text">
+                            запустить процесс проверки
+                            гипотез в котором вы быстрее
+                            и ЗНАЧИТЕЛЬНО дешевле найдёте
+                            product-market fit
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Contains -->
+
+    <section id="programm" class="course-contains">
+        <div class="container">
+
+            <h2 class="course-contains__title">
+                Что будет на курсе
+            </h2>
+
+            <!-- Items -->
+            <div class="row">
+
+                <!-- Item -->
+                <div class="col col-12 col-md-4 course-contains__col">
+                    <h3 class="course-contains__subtitle">
+                        7 лекций
+                    </h3>
+                    <p class="course-contains__text">
+                        насыщенных практикой
+                    </p>
+                </div>
+
+                <!-- Item -->
+                <div class="col col-12 col-md-4 course-contains__col">
+                    <h3 class="course-contains__subtitle">
+                        2 гипотезы
+                    </h3>
+                    <p class="course-contains__text">
+                        минимум, которые проверишь
+                        на курсе
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Item -->
+                <div class="col col-12 col-md-4 course-contains__col">
+                    <h3 class="course-contains__subtitle">
+                        3 методички
+                    </h3>
+                    <p class="course-contains__text">
+                        с пошаговым описанием действий
+                        как провести классный CustDev
+                        и как проверить любую
+                        гипотезу
+                    </p>
+                </div>
+
+                <!-- Item -->
+                <div class="col col-12 col-md-4 course-contains__col">
+                    <h3 class="course-contains__subtitle">
+                        20 интервью
+                    </h3>
+                    <p class="course-contains__text">
+                        с пользователями твоего
+                        продукта
+                    </p>
+                </div>
+
+                <!-- Item -->
+                <div class="col col-12 col-md-4 course-contains__col">
+                    <h3 class="course-contains__subtitle">
+                        Начнешь, наконец,
+                        делать CustDev
+                    </h3>
+                    <p class="course-contains__text">
+                        про который все давно говорят,
+                        но мало кто делает
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <a href="#" class="lurk-more__link">
+                    Смотреть программу полностью
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Result -->
+    <section class="result">
+        <div class="container">
+
+            <!-- Title -->
+            <div class="row">
+                <h3 class="result__title">
+                    Результат
+                </h3>
+            </div>
+
+            <!-- Items -->
+            <div class="row">
+
+                <!-- Item -->
+                <div class="result__item">
+                    <strong class="result__item-title result__item-title--first">
+                        Ты начнёшь делать Customer Development
+                        и проверять гипотезы в своём проекте
+                    </strong>
+                    <p class="result__item-text">
+                        Структура курса построена построена вокруг
+                        практики в проектах участников курса.
+                        100% слушателейэтого курса будут
+                        применять оба навыка в своих проектах
+                    </p>
+                </div>
+
+                <!-- Item -->
+                <div class="result__item">
+                    <strong class="result__item-title result__item-title--second">
+                        Заведенный процесс
+                    </strong>
+                    <p class="result__item-text">
+                        Обязательной частью обучения будет встройка
+                        процессов постоянного Customer Development и
+                        проверки гипотез в ежедневную рутину
+                    </p>
+                </div>
+
+                <!-- Item -->
+                <div class="result__item">
+                    <strong class="result__item-title result__item-title--third">
+                        Инструменты, которые останутся с вами надолго
+                    </strong>
+                    <p class="result__item-text">
+                        Все участники курса получат два набора карт —
+                        конструкторы, из которых можно будет собрать
+                        идеальный процесс Customer Development
+                        и проверить любую гипотезу
+                    </p>
+                </div>
+
+                <!-- Item -->
+                <div class="result__item">
+                    <strong class="result__item-title result__item-title--fourth">
+                        Кейсы и приёмы топовых компаний рунета
+                    </strong>
+                    <p class="result__item-text">
+                        Расскажу и разберём кейсы, хаки и нюансы
+                        топовых команд России: SkyEng, Яндекс,
+                        Chatfuel
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Author -->
+
+    <section id="teacher" class="course-author">
+        <div class="container">
+
+            <!-- Title -->
+            <div class="row">
+                <h2 class="course-author__title">
+                    Почему мне можно доверять
+                </h2>
+            </div>
+
+            <!-- Cols -->
+            <div class="row">
+
+                <!-- Left Col -->
+                <div class="col col-12 col-md-6 course-author__col
+                    course-author__col--left">
+                    <div class="frame_blc">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/pp9uwdJz8PE" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <!-- Right Col -->
+                <div class="col col-12 col-md-6 course-author__col
+                    course-author__col--right">
+                    <strong class="course-author__name">
+                        Алексей Иванов
+                    </strong>
+                    <span class="course-author__position">
+                        Ex-Lead Product Manager
+                    </span>
+                </div>
+            </div>
+
+            <!-- Items -->
+            <div class="row course-author__items-holder">
+
+                <!-- Item -->
+                <div class="col col-12 col-md-3 course-author__item">
+                    <strong class="course-author__item-title course-author__item-title--first">
+                        Опыт в продукте
+                    </strong>
+                    <p class="course-author__item-text">
+                        Отвечал за продукт поиска по изображениям,
+                        с помощью Customer Development и
+                        юзабилити-исследований добились
+                        кратного роста метрик
+                    </p>
+                </div>
+
+                <!-- Item -->
+                <div class="col col-12 col-md-3 course-author__item">
+                    <strong class="course-author__item-title course-author__item-title--second">
+                        Обучил CustDev`у 400+ человек
+                    </strong>
+                    <p class="course-author__item-text">
+                        400+ человек уже прошли курс по CustDev
+                        и проверке гипотез в рамках отдельного курса,
+                        так и в составе программы
+                        "Руководитель digital-продукта"
+                    </p>
+                </div>
+
+                <!-- Item -->
+                <div class="col col-12 col-md-3 course-author__item">
+                    <strong class="course-author__item-title course-author__item-title--third">
+                        Опыт разработки бота
+                    </strong>
+                    <p class="course-author__item-text">
+                        Создавали с нуля конструктор ботов
+                        для Messenger и выводили в лидеры
+                        рынка конструкторов ботов
+                    </p>
+                </div>
+
+                <!-- Item -->
+                <div class="col col-12 col-md-3 course-author__item">
+                    <strong class="course-author__item-title course-author__item-title--fourth">
+                        Топ-2 — оценка лектора
+                    </strong>
+                    <p class="course-author__item-text">
+                        Урезанный курс также читал в крупных
+                        digital -школах, студенты оценили
+                        как Топ-2 преподавателя
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+
+    <section id="reviews" class="reviews">
+        <div class="container reviews__container">
+
+            <!-- Title -->
+            <div class="row">
+                <h2 class="reviews__title">
+                    Отзывы
+                </h2>
+            </div>
+
+            <!-- Items -->
+            <div class="row">
+
+                <!-- Item -->
+                <div class="reviews__item">
+                    <div class="review__holder">
+                        <span class="review__author">
+                            Иван Матвейчук
+                        </span>
+                        <p class="review__text">
+                            Куча интерактива, живая подача, небольшое шоу —
+                            Леша хорошо удерживает внимание и даёт не
+                            просто информацию, а разрабатывает
+                            (насколько это возможно за это время)
+                            именно скилл.
+                        </p>
+                    </div>
+                    <div class="review__photo">
+                        <img src="img/review-photo1.png" alt="" class="review__photo-img">
+                    </div>
+                </div>
+
+                <!-- Item -->
+                <div class="reviews__item">
+                    <div class="review__holder">
+                        <span class="review__author">
+                            Сергей Конев
+                        </span>
+                        <p class="review__text">
+                            Дизайнеру важно уметь общаться с клиентами:
+                            искать боли, находить настоящую мотивацию,
+                            чтобы придумывать гипотезы и внедрять их,
+                            или создавать новые продукты. Чтобы этому
+                            научиться, я пошел на курс по Сustomer Development.
+                            Курс состоит из 4 занятий. На каждом занятии мы
+                            проходили теорию и сразу же закрепляли её на практике,
+                            и, конечно же, получали объемную
+                            домашку. По итогу курса у меня стала
+                            формироваться картина о том, что делать дальше.
+                        </p>
+                    </div>
+                    <div class="review__photo">
+                        <img src="img/review-photo2.png" alt="" class="review__photo-img">
+                    </div>
+                </div>
+
+                <!-- Item -->
+                <div class="reviews__item">
+                    <div class="review__holder">
+                        <span class="review__author">
+                            Екатерина Сиванова
+                        </span>
+                        <p class="review__text">
+                            Custdev это про обратную связь и выход
+                            из зоны комфорта, а этого никто не любит.
+                            Куда приятнее уютно пилить фичи.
+                            Леша рассказал кучу всяких хаков того,
+                            как делать custdev постоянно, не тратя
+                            на это уйму сил. Советую
+                        </p>
+                    </div>
+                    <div class="review__photo">
+                        <img src="img/review-photo3.png" alt="" class="review__photo-img">
+                    </div>
+                </div>
+
+                <!-- Item -->
+                <div class="reviews__item review__tale-holder">
+                    <div class="review__tale">
+                        <span class="review__tale-text">
+                            Рассказ о курсе от дизайнера
+                            market.ru
+                        </span>
+                        <a href="#" class="wimprof__link">
+                            Читать
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Past Flows -->
+    <section class="past-flows">
+        <div class="container">
+
+            <!-- Title -->
+            <div class="row">
+                <h2 class="past-flows__title">
+                    Как проходили прошлые потоки
+                </h2>
+            </div>
+
+            <!-- Items -->
+            <div class="row justify-content-between">
+
+                <!-- Item -->
+                <div class="past-flows__item">
+                    <a href="img/past-flows-img.jpg" data-lightbox="past-flows">
+                        <img class="past-flows__img" src="img/past-flows-thumb.jpg" alt="">
+                    </a>
+                </div>
+
+                <!-- Item -->
+                <div class="past-flows__item">
+                    <a href="img/past-flows-img-2.jpg" data-lightbox="past-flows">
+                        <img class="past-flows__img" src="img/past-flows-thumb-2.jpg" alt="">
+                    </a>
+                </div>
+
+                <!-- Item -->
+                <div class="past-flows__item">
+                    <a href="img/past-flows-img-3.jpg" data-lightbox="past-flows">
+                        <img class="past-flows__img" src="img/past-flows-thumb-3.jpg" alt="">
+                    </a>
+                </div>
+
+                <!-- Item -->
+                <div class="past-flows__item">
+                    <a href="img/past-flows-img-4.jpg" data-lightbox="past-flows">
+                        <img class="past-flows__img" src="img/past-flows-thumb-4.jpg" alt="">
+                    </a>
+                </div>
+
+                <!-- Item -->
+                <div class="past-flows__item">
+                    <a href="img/past-flows-img-5.jpg" data-lightbox="past-flows">
+                        <img class="past-flows__img" src="img/past-flows-thumb-5.jpg" alt="">
+                    </a>
+                </div>
+
+                <!-- Item -->
+                <div class="past-flows__item">
+                    <a href="img/past-flows-img-6.jpg" data-lightbox="past-flows">
+                        <img class="past-flows__img" src="img/past-flows-thumb-6.jpg" alt="">
+                    </a>
+                </div>
+
+                <!-- Item -->
+                <div class="past-flows__item">
+                    <a href="img/past-flows-img-7.jpg" data-lightbox="past-flows">
+                        <img class="past-flows__img" src="img/past-flows-thumb-7.jpg" alt="">
+                    </a>
+                </div>
+
+                <!-- Item -->
+                <div class="past-flows__item">
+                    <a href="img/past-flows-img-8.jpg" data-lightbox="past-flows">
+                        <img class="past-flows__img" src="img/past-flows-thumb-8.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Companies -->
+    <section id="price" class="for-companies">
+        <div class="container">
+
+            <!-- Title -->
+            <div class="row">
+                <h2 class="for-companies__title">
+                    Стоимость для компаний
+                </h2>
+            </div>
+
+            <!-- Label -->
+            <div class="row for-companies__label-holder">
+                <div class="for-companies__label">
+                    <span class="for-companies__label-text">
+                        Выгодно
+                    </span>
+                </div>
+            </div>
+
+            <!-- Items -->
+            <div class="row justify-content-between">
+
+                <!-- Item -->
+                <div class="for-companies__item">
+                    <strong class="for-companies__item-price">
+                        32 900 &#8381;
+                    </strong>
+                    <span class="for-companies__item-members">
+                        1 сотрудник
+                    </span>
+                    <button class="btn for-companies__btn">
+                        Оформить
+                    </button>
+                </div>
+
+                <!-- Item -->
+                <div class="for-companies__item">
+                    <strong class="for-companies__item-price">
+                        29 900 &#8381;/чел
+                    </strong>
+                    <span class="for-companies__item-members">
+                        2 сотрудника
+                    </span>
+                    <button class="btn for-companies__btn">
+                        Оформить
+                    </button>
+                </div>
+
+                <!-- Item -->
+                <div class="for-companies__item">
+                    <strong class="for-companies__item-price">
+                        26 900 &#8381;/чел
+                    </strong>
+                    <span class="for-companies__item-members">
+                        5+ сотрудников
+                    </span>
+                    <button class="btn for-companies__btn">
+                        Оформить
+                    </button>
+                </div>
+
+                <!-- Item -->
+                <div class="for-companies__item">
+                    <strong class="for-companies__item-price">
+                        25 900 &#8381;
+                    </strong>
+                    <span class="for-companies__item-members">
+                        Тариф "Для себя"
+                    </span>
+                    <button class="btn for-companies__btn">
+                        Оформить
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Price Included -->
+    <section class="price-included">
+        <div class="container">
+
+            <!-- Title -->
+            <div class="row">
+                <h3 class="result__title">
+                    В стоимость входит
+                </h3>
+            </div>
+
+            <!-- Items -->
+            <div class="row">
+
+                <!-- Item -->
+                <div class="result__item">
+                    <strong class="result__item-title result__item-title--first">
+                        3 методички
+                    </strong>
+                    <p class="result__item-text">
+                        методичка по проведению Customer Development
+                        и по настройке процессов проверки гипотез
+                    </p>
+                </div>
+
+                <!-- Item -->
+                <div class="result__item">
+                    <strong class="result__item-title
+                    price-included__item-title--second">
+                        3 месяца подписки
+                    </strong>
+                    <p class="result__item-text">
+                        можно прочитать книгу (бумажный тираж закончился)
+                    </p>
+                </div>
+
+                <!-- Item -->
+                <div class="result__item">
+                    <p class="result__item-text">
+                        <div class="frame_blc">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/pp9uwdJz8PE"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </p>
+                    <strong class="result__item-title price-included__item-title--third">
+                        Видеозапись курса
+                    </strong>
+                </div>
+
+                <!-- Item -->
+                <div class="result__item">
+                    <strong class="result__item-title
+                    price-included__item-title--fourth">
+                        Бессмертный чат
+                    </strong>
+                    <p class="result__item-text">
+                        Вы познакомитесь с большим количеством
+                        интересных продактов и сможете общаться
+                        и после курса, общий чат в Telegram
+                        останется с вами надолго
+                    </p>
+                </div>
+            </div>
+
+            <!-- Btn -->
+            <div class="row">
+                <button class="btn price-included__btn">
+                    Записаться на курс
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="page__footer">
+
+        <!-- Top -->
+        <div class="footer-top">
+            <div class="container">
+                <div class="row footer-top__holder">
+                    <!-- Cities Nav -->
+                    <ul class="nav-list__footer--cities">
+                        <li class="nav-list__footer-item">
+                            <a href="#" class="nav-list__footer-link">
+                                Санкт-Петербург
+                            </a>
+                        </li>
+                        <li class="nav-list__footer-item">
+                            <a href="#" class="nav-list__footer-link">
+                                Москва
+                            </a>
+                        </li>
+                        <li class="nav-list__footer-item">
+                            <a href="#" class="nav-list__footer-link">
+                                Минск
+                            </a>
+                        </li>
+                    </ul>
+
+                    <button class="btn btn__footer">
+                        Записаться
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row footer-bottom__holder">
+                    <span class="copyright">
+                        Copyright &copy; 2019 All rights reserved
+                    </span>
+                    <a href="#" class="contract-offer">
+                        Договор-оферта
+                    </a>
+                    <a class="privacy" href="#">
+                        Политика конфиденциальности
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- Js -->
+    <script src="js/scripts.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>
