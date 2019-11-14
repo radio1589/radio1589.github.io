@@ -29,7 +29,7 @@
 <body>
 
 	<!-- Header -->
-	<div class="container">
+	<div class="container header__container">
 		
 		<header class="page__header">
 
@@ -37,12 +37,11 @@
 			<div class="page__header-top">
 				
 				<!-- Lang -->
-				<div class="lang-btn">
-					<span class="lang-btn__text">
-						ru
-					</span>
-					<img src="img/@1x/icon-ru.jpg" alt="" class="lang-btn__img">
-					<a href="#" class="lang-btn__link"></a>
+				<div class="lang__switcher">
+					<select name="" id="" class="selectric">
+						<option value="">RU</option>
+						<option  value="">EN</option>
+					</select>
 				</div>
 				
 				<!-- Account -->
@@ -105,49 +104,144 @@
 
 			<!-- Jumbotron -->
 			<div class="jumbotron">
-				<div class="row">
+				<div class="jumbotron__holder">
+					<!-- Title -->
+				<strong class="jumbotron__title">
+					Институт Развития Цифровой
+					Экономики (ООО ИРЦЭ)
+				</strong>
 
-					<!-- Left Col -->
-					<div class="col col-7 jumbotron__left-col">
-						<strong class="jumbotron__title">
-							Институт Развития Цифровой
-							Экономики (ООО ИРЦЭ)
-						</strong>
-						<p class="jumbotron__text">
-							Разрабатываем высоконагруженные клиент-серверные
-							и многоуровневые комплексные системы с 1995 года
-						</p>
-						<button class="btn__telegram">
-							<span>
-								Оставить заявку
-							</span>
-							<img src="img/@1x/icon-telegram.svg" alt="">
-						</button>
-					</div>
+				<!-- Jumbotron Text -->
+				<p class="jumbotron__text">
+					Разрабатываем высоконагруженные клиент-серверные
+					и многоуровневые комплексные системы с 1995 года
+				</p>
 
-					<!-- Right Col -->
-					<div class="col col-5 jumbotron__right-col">
+				<!-- Telegram Btn -->
+				<button class="btn__telegram">
+					<span>
+						Оставить заявку
+					</span>
+					<img src="img/@1x/icon-telegram.svg" alt="">
+				</button>
+			</div>
 
-						<!-- Left Image -->
-						<div class="jumbotron__left-imgs">
-							<img class="jumbotron__left-img jumbotron__left-img--1" src="img/@1x/left.png" alt="">
-						</div>
-
-						<!-- Right Images -->
-						<div class="jumbotron__right-imgs">
-							<img class="jumbotron__left-img" src="img/@1x/right.png" alt="">
-
-							<!-- Cards -->
-							<div class="jumbotron__right-cards">
-								<img src="img/@1x/sk_1.png" alt="" class="jumbotron__right-cards--left">
-								<img src="img/@1x/sk_2.png" alt="" class="jumbotron__left-cards--left">
-							</div>
-						</div>
-					</div>
-				</div>
+			<!-- Jumbotron Cards -->
+			<div class="jumbotron__cards">
+				<img src="img/@1x/sk_1.png" alt="">
+				<img src="img/@1x/sk_2.png" alt="">
+			</div>
 			</div>
 		</header>
 	</div>
+
+	<!-- Products -->
+	<section class="products">
+		<div class="container">
+
+			<!-- Title -->
+			<h2 class="subtitle products__title">
+				Продукты
+			</h2>
+
+			<!-- Items -->
+			<div class="product-items">
+				<div class="row">
+				<!-- Left -->
+				<div class="col col-12 col-sm-12 col-lg-8 product-items__left">
+					<div class="row justify-content-xs-center">
+						<div class="col col-xs-8 col-sm-6 product-item">
+							<figure class="product-item__holder">
+								<img src="img/@1x/products-item-1.jpg" alt="">
+								<div class="product-item__content">
+									<strong class="product-item__title">
+										Мобильная торговля
+									</strong>
+									<p class="product-item__text">
+										Компания решение для управления
+										дистрибьюцией и мобильной торговлей
+									</p>
+								</div>
+							</figure>
+						</div>
+						<div class="col col-12 col-xs-8 col-sm-6 product-item">
+								<figure class="product-item__holder">
+										<img src="img/@1x/products-item-2.jpg" alt="">
+										<div class="product-item__content">
+											<strong class="product-item__title">
+												Умная доставка
+											</strong>
+											<p class="product-item__text">
+												Обеспечет прозрачность перевозок,
+												работы водителей и экспедиторов.
+											</p>
+										</div>
+									</figure>
+						</div>
+					</div>
+					<div class="row justify-content-xs-center">
+							<div class="col col-xs-8 col-sm-6 product-item">
+									<figure class="product-item__holder">
+											<img src="img/@1x/products-item-3.jpg" alt="">
+											<div class="product-item__content">
+												<strong class="product-item__title">
+													Умные Инженерные Системы
+												</strong>
+												<p class="product-item__text">
+													Российское решение основано на
+													Цифровой Технологической Платформе
+													ОПТИМУМ 2025.
+												</p>
+											</div>
+										</figure>
+							</div>
+							<div class="col col-xs-8 col-sm-6 product-item">
+									<figure class="product-item__holder">
+											<img src="img/@1x/products-item-4.jpg" alt="">
+											<div class="product-item__content">
+												<strong class="product-item__title">
+													Распознавания образов
+												</strong>
+												<p class="product-item__text">
+													Решениям предназначено для
+													автоматического Распознавания
+													изображений витрин(планограмм)
+													в сфере розничной торговли.
+												</p>
+											</div>
+										</figure>
+							</div>
+						</div>
+				</div>
+
+				<!-- Right -->
+				<div class="col col-12 col-xs-12 col-lg-4 items__right-col">
+					<div class="row justify-content-xs-center">
+						<div class="col col-xs-8 col-sm-6 col-lg-12 product-item">
+								<figure class="product-item__holder">
+										<img src="img/@1x/products-item-5.jpg" alt="">
+										<div class="product-item__content">
+											<strong class="product-item__title">
+												Платформа<br> ОПТИМУМ 2025
+											</strong>
+											<p class="product-item__text">
+												Российский инструментарий, с помощью
+												которого вы можете создавать решения на
+												основе мобильных технологий и промышленного
+												интернета вещей (lloT).
+												<a href="#" class="product-item__link">
+													<img src="img/@1x/products-arrow.svg" alt="">
+												</a>
+											</p>
+										</div>
+									</figure>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<script src="js/scripts.min.js"></script>
 
