@@ -11,17 +11,19 @@
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
+
 	<!-- Template Basic Images Start -->
 	<meta property="og:image" content="path/to/image.jpg">
 	<link rel="icon" href="img/favicon/favicon.ico">
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
 	<!-- Template Basic Images End -->
-	
+
 	<!-- Custom Browsers Color Start -->
 	<meta name="theme-color" content="#000">
 	<!-- Custom Browsers Color End -->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Open+Sans:400,600,700|Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Open+Sans:400,600,700|Roboto:400,700&display=swap&subset=cyrillic"
+		rel="stylesheet">
 	<link rel="stylesheet" href="css/main.min.css">
 
 </head>
@@ -30,30 +32,26 @@
 
 	<!-- Header -->
 	<div class="container header__container">
-		
+
 		<header class="page__header">
 
 			<!-- Top -->
 			<div class="page__header-top">
-				
+
 				<!-- Lang -->
 				<div class="lang__switcher">
 					<select name="" id="" class="selectric">
 						<option value="">RU</option>
-						<option  value="">EN</option>
+						<option value="">EN</option>
 					</select>
 				</div>
-				
+
 				<!-- Account -->
-				<div class="account">
-					<span class="account__icon">
-						<img src="img/@1x/icon-account.svg" alt="">
-					</span>
-					<span class="account__text">
-						Личный кабинет
-					</span>
-					<a href="#" class="account__link"></a>
-				</div>
+				<a href="#" class="account">
+					<img src="img/@1x/icon-account.svg" alt="" class="account__icon">
+					<span class="account__text">Личный кабинет</span>
+					<span class="account__btn"></span>
+				</a>
 			</div>
 
 			<!-- Header Main -->
@@ -106,31 +104,31 @@
 			<div class="jumbotron">
 				<div class="jumbotron__holder">
 					<!-- Title -->
-				<strong class="jumbotron__title">
-					Институт Развития Цифровой
-					Экономики (ООО ИРЦЭ)
-				</strong>
+					<strong class="jumbotron__title">
+						Институт Развития Цифровой
+						Экономики (ООО ИРЦЭ)
+					</strong>
 
-				<!-- Jumbotron Text -->
-				<p class="jumbotron__text">
-					Разрабатываем высоконагруженные клиент-серверные
-					и многоуровневые комплексные системы с 1995 года
-				</p>
+					<!-- Jumbotron Text -->
+					<p class="jumbotron__text">
+						Разрабатываем высоконагруженные клиент-серверные
+						и многоуровневые комплексные системы с 1995 года
+					</p>
 
-				<!-- Telegram Btn -->
-				<button class="btn__telegram">
-					<span>
-						Оставить заявку
-					</span>
-					<img src="img/@1x/icon-telegram.svg" alt="">
-				</button>
-			</div>
+					<!-- Telegram Btn -->
+					<button class="btn__telegram">
+						<span>
+							Оставить заявку
+						</span>
+						<img src="img/@1x/icon-telegram.svg" alt="">
+					</button>
+				</div>
 
-			<!-- Jumbotron Cards -->
-			<div class="jumbotron__cards">
-				<img src="img/@1x/sk_1.png" alt="">
-				<img src="img/@1x/sk_2.png" alt="">
-			</div>
+				<!-- Jumbotron Cards -->
+				<div class="jumbotron__cards">
+					<img src="img/@1x/sk_1.png" alt="">
+					<img src="img/@1x/sk_2.png" alt="">
+				</div>
 			</div>
 		</header>
 	</div>
@@ -147,103 +145,794 @@
 			<!-- Items -->
 			<div class="product-items">
 				<div class="row">
-				<!-- Left -->
-				<div class="col col-12 col-sm-12 col-lg-8 product-items__left">
-					<div class="row justify-content-xs-center">
-						<div class="col col-xs-8 col-sm-6 product-item">
-							<figure class="product-item__holder">
-								<img src="img/@1x/products-item-1.jpg" alt="">
-								<div class="product-item__content">
-									<strong class="product-item__title">
-										Мобильная торговля
-									</strong>
-									<p class="product-item__text">
-										Компания решение для управления
-										дистрибьюцией и мобильной торговлей
-									</p>
-								</div>
-							</figure>
-						</div>
-						<div class="col col-12 col-xs-8 col-sm-6 product-item">
+					<!-- Left -->
+					<div class="col col-12 col-sm-12 col-lg-8 product-items__left">
+						<div class="row justify-content-xs-center">
+							<div class="col col-xs-8 col-sm-6 product-item">
 								<figure class="product-item__holder">
-										<img src="img/@1x/products-item-2.jpg" alt="">
-										<div class="product-item__content">
-											<strong class="product-item__title">
-												Умная доставка
-											</strong>
-											<p class="product-item__text">
-												Обеспечет прозрачность перевозок,
-												работы водителей и экспедиторов.
-											</p>
-										</div>
-									</figure>
+									<img src="img/@1x/products-item-1.jpg" alt="">
+									<div class="product-item__content">
+										<strong class="product-item__title">
+											Мобильная торговля
+										</strong>
+										<p class="product-item__text">
+											Компания решение для управления
+											дистрибьюцией и мобильной торговлей
+											<a href="#" class="product-item__link">
+												<img src="img/@1x/products-arrow.svg" alt="">
+											</a>
+										</p>
+									</div>
+								</figure>
+							</div>
+							<div class="col col-12 col-xs-8 col-sm-6 product-item">
+								<figure class="product-item__holder">
+									<img src="img/@1x/products-item-2.jpg" alt="">
+									<div class="product-item__content">
+										<strong class="product-item__title">
+											Умная доставка
+										</strong>
+										<p class="product-item__text">
+											Обеспечет прозрачность перевозок,
+											работы водителей и экспедиторов.
+											<a href="#" class="product-item__link">
+												<img src="img/@1x/products-arrow.svg" alt="">
+											</a>
+										</p>
+									</div>
+								</figure>
+							</div>
+						</div>
+						<div class="row justify-content-xs-center">
+							<div class="col col-xs-8 col-sm-6 product-item">
+								<figure class="product-item__holder">
+									<img src="img/@1x/products-item-3.jpg" alt="">
+									<div class="product-item__content">
+										<strong class="product-item__title">
+											Умные Инженерные Системы
+										</strong>
+										<p class="product-item__text">
+											Российское решение основано на
+											Цифровой Технологической Платформе
+											ОПТИМУМ 2025.
+											<a href="#" class="product-item__link">
+												<img src="img/@1x/products-arrow.svg" alt="">
+											</a>
+										</p>
+									</div>
+								</figure>
+							</div>
+							<div class="col col-xs-8 col-sm-6 product-item">
+								<figure class="product-item__holder">
+									<img src="img/@1x/products-item-4.jpg" alt="">
+									<div class="product-item__content">
+										<strong class="product-item__title">
+											Распознавания образов
+										</strong>
+										<p class="product-item__text">
+											Решениям предназначено для
+											автоматического Распознавания
+											изображений витрин(планограмм)
+											в сфере розничной торговли.
+											<a href="#" class="product-item__link">
+												<img src="img/@1x/products-arrow.svg" alt="">
+											</a>
+										</p>
+									</div>
+								</figure>
+							</div>
 						</div>
 					</div>
-					<div class="row justify-content-xs-center">
-							<div class="col col-xs-8 col-sm-6 product-item">
-									<figure class="product-item__holder">
-											<img src="img/@1x/products-item-3.jpg" alt="">
-											<div class="product-item__content">
-												<strong class="product-item__title">
-													Умные Инженерные Системы
-												</strong>
-												<p class="product-item__text">
-													Российское решение основано на
-													Цифровой Технологической Платформе
-													ОПТИМУМ 2025.
-												</p>
-											</div>
-										</figure>
-							</div>
-							<div class="col col-xs-8 col-sm-6 product-item">
-									<figure class="product-item__holder">
-											<img src="img/@1x/products-item-4.jpg" alt="">
-											<div class="product-item__content">
-												<strong class="product-item__title">
-													Распознавания образов
-												</strong>
-												<p class="product-item__text">
-													Решениям предназначено для
-													автоматического Распознавания
-													изображений витрин(планограмм)
-													в сфере розничной торговли.
-												</p>
-											</div>
-										</figure>
-							</div>
-						</div>
-				</div>
 
-				<!-- Right -->
-				<div class="col col-12 col-xs-12 col-lg-4 items__right-col">
-					<div class="row justify-content-xs-center">
-						<div class="col col-xs-8 col-sm-6 col-lg-12 product-item">
+					<!-- Right -->
+					<div class="col col-12 col-xs-12 col-lg-4 items__right-col">
+						<div class="row justify-content-xs-center">
+							<div class="col col-xs-8 col-sm-6 col-lg-12 product-item">
 								<figure class="product-item__holder">
-										<img src="img/@1x/products-item-5.jpg" alt="">
-										<div class="product-item__content">
-											<strong class="product-item__title">
-												Платформа<br> ОПТИМУМ 2025
-											</strong>
-											<p class="product-item__text">
-												Российский инструментарий, с помощью
-												которого вы можете создавать решения на
-												основе мобильных технологий и промышленного
-												интернета вещей (lloT).
-												<a href="#" class="product-item__link">
-													<img src="img/@1x/products-arrow.svg" alt="">
-												</a>
-											</p>
-										</div>
-									</figure>
+									<img src="img/@1x/products-item-5.jpg" alt="">
+									<div class="product-item__content">
+										<strong class="product-item__title">
+											Платформа<br> ОПТИМУМ 2025
+										</strong>
+										<p class="product-item__text">
+											Российский инструментарий, с помощью
+											которого вы можете создавать решения на
+											основе мобильных технологий и промышленного
+											интернета вещей (lloT).
+											<a href="#" class="product-item__link">
+												<img src="img/@1x/products-arrow.svg" alt="">
+											</a>
+										</p>
+									</div>
+								</figure>
+							</div>
 						</div>
 					</div>
-				</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
+	<!-- About Company -->
+	<section class="about-company">
+		<div class="container">
+			<div class="row">
+
+				<!-- Left Col -->
+				<div class="col col-xs-12 col-sm-12 col-md-6 about-company__left">
+					<img src="img/@1x/company-photo.jpg" alt="">
+				</div>
+
+				<!-- Right Col -->
+				<div class="col col-xs-12 col-sm-12 col-md-6 about-company__right">
+					<h2 class="company__title">О компании</h2>
+					<p class="company__text">
+						ООО «Институт Развития Цифровой Экономики» (ООО «ИРЦЭ») образовано в 2018 году. Резидент
+						ИТ-кластера Фонда Сколково. Компания была внесена в реестр участников проекта создания и
+						обеспечения функционирования инновационного центра «Сколково». Компания разрабатывает и внедряет
+						решения для цифровой трансформации российской экономики в области мобильных технологий,
+						искусственного интеллекта, промышленного интернета вещей (IIoT).
+					</p>
+					<div class="company__cards">
+
+						<div class="company__cards-item">
+							<img src="img/@1x/icon-company-1.png" alt="" class="company__cards-icon">
+							<strong class="company__cards-title">
+								Эффективно
+							</strong>
+							<p class="company__cards-text">
+								Эффективность от продаж и
+								снижение расходов на доставку
+							</p>
+						</div>
+
+						<div class="company__cards-item">
+							<img src="img/@1x/icon-company-2.png" alt="" class="company__cards-icon">
+							<strong class="company__cards-title">
+								Разработка
+							</strong>
+							<p class="company__cards-text">
+								Уменьшение времени разработки и
+								внендрения мобильных и lloT решений
+							</p>
+						</div>
+
+						<div class="company__cards-item">
+							<img src="img/@1x/icon-company-3.png" alt="" class="company__cards-icon">
+							<strong class="company__cards-title">
+								24/7
+							</strong>
+							<p class="company__cards-text">
+								Непрерывность производственных
+								процессов
+							</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- Clients -->
+	<section class="clients">
+		<div class="container">
+			<h2 class="subtitle clients__title">
+				Наши клиенты
+			</h2>
+
+			<!-- Slider -->
+
+			<div class="owl-carousel">
+				<div class="clients__item">
+
+					<!-- Left -->
+					<div class="clients__item-left">
+						<div class="mars-logo">
+							<img src="img/@1x/mars-logo.png" alt="">
+						</div>
+						<strong class="clients__item-subtitle">
+							Mars Kazakhstan
+						</strong>
+						<p class="clients__item-text">
+							Одна из крупнейших компаний в мире по производству продуктов питания и ухода для домашних
+							животных. Является производителем всемирно известных брендов M&M’s®, SNICKERS®, TWIX®, MILKY
+							WAY®, DOVE®, PEDIGREE®, ROYAL CANIN®, WHISKAS®, EXTRA®, ORBIT®, 5™, SKITTLES®, UNCLE BEN’S®,
+							MARS DRINKS и COCOAVIA®.
+						</p>
+						<button class="btn__telegram clients__btn">
+							<span>
+								Подробнее
+							</span>
+							<img src="img/@1x/btn-arrow.svg" alt="">
+						</button>
+					</div>
+
+					<!-- Right -->
+					<div class="clients__item-right">
+						<img src="img/@1x/map.png" alt="">
+					</div>
+				</div>
+
+				<!-- Item -->
+				<div class="clients__item">
+
+					<!-- Left -->
+					<div class="clients__item-left">
+						<div class="mars-logo">
+							<img src="img/@1x/mars-logo.png" alt="">
+						</div>
+						<strong class="clients__item-subtitle">
+							Mars Kazakhstan
+						</strong>
+						<p class="clients__item-text">
+							Одна из крупнейших компаний в мире по производству продуктов питания и ухода для домашних
+							животных. Является производителем всемирно известных брендов M&M’s®, SNICKERS®, TWIX®, MILKY
+							WAY®, DOVE®, PEDIGREE®, ROYAL CANIN®, WHISKAS®, EXTRA®, ORBIT®, 5™, SKITTLES®, UNCLE BEN’S®,
+							MARS DRINKS и COCOAVIA®.
+						</p>
+						<button class="btn__telegram clients__btn">
+							<span>
+								Подробнее
+							</span>
+							<img src="img/@1x/btn-arrow.svg" alt="">
+						</button>
+					</div>
+
+					<!-- Right -->
+					<div class="clients__item-right">
+						<img src="img/@1x/map.png" alt="">
+					</div>
+				</div>
+
+				<!-- Item -->
+				<div class="clients__item">
+
+					<!-- Left -->
+					<div class="clients__item-left">
+						<div class="mars-logo">
+							<img src="img/@1x/mars-logo.png" alt="">
+						</div>
+						<strong class="clients__item-subtitle">
+							Mars Kazakhstan
+						</strong>
+						<p class="clients__item-text">
+							Одна из крупнейших компаний в мире по производству продуктов питания и ухода для домашних
+							животных. Является производителем всемирно известных брендов M&M’s®, SNICKERS®, TWIX®, MILKY
+							WAY®, DOVE®, PEDIGREE®, ROYAL CANIN®, WHISKAS®, EXTRA®, ORBIT®, 5™, SKITTLES®, UNCLE BEN’S®,
+							MARS DRINKS и COCOAVIA®.
+						</p>
+						<button class="btn__telegram clients__btn">
+							<span>
+								Подробнее
+							</span>
+							<img src="img/@1x/btn-arrow.svg" alt="">
+						</button>
+					</div>
+
+					<!-- Right -->
+					<div class="clients__item-right">
+						<img src="img/@1x/map.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- News -->
+	<section class="news">
+		<div class="container">
+
+			<!-- Title -->
+			<h2 class="subtitle news__title">
+				Актуальные новости
+			</h2>
+			<div class="row">
+
+				<!-- Item -->
+				<div class="news__item">
+					<figure class="news__item-holder">
+						<img src="img/@1x/news-1.jpg" alt="" class="news__item-img">
+						<span class="news__item-label">Новости</span>
+					</figure>
+					<strong class="news__item-title">
+						Резидент обеспечел Mars искусственным
+						интеллектом.
+					</strong>
+					<p class="news__item-text">
+						«Институт развития цифровой экономики» (ИРЦЭ), резидент Кластера информационных технологий
+						Фонда...
+					</p>
+					<button class="btn__telegram news__item-btn">
+						<span>
+							Подробнее
+						</span>
+						<img src="img/@1x/btn-arrow.svg" alt="">
+					</button>
+				</div>
+
+				<!-- Item -->
+				<div class="news__item">
+					<figure class="news__item-holder">
+						<img src="img/@1x/news-2.jpg" alt="" class="news__item-img">
+						<span class="news__item-label">Новости</span>
+					</figure>
+					<strong class="news__item-title">
+						Резидент обеспечел Mars искусственным
+						интеллектом.
+					</strong>
+					<p class="news__item-text">
+						«Институт развития цифровой экономики» (ИРЦЭ), резидент Кластера информационных технологий
+						Фонда...
+					</p>
+					<button class="btn__telegram news__item-btn">
+						<span>
+							Подробнее
+						</span>
+						<img src="img/@1x/btn-arrow.svg" alt="">
+					</button>
+				</div>
+
+				<!-- Item -->
+				<div class="news__item">
+					<figure class="news__item-holder">
+						<img src="img/@1x/news-1.jpg" alt="" class="news__item-img">
+						<span class="news__item-label">Новости</span>
+					</figure>
+					<strong class="news__item-title">
+						Резидент обеспечел Mars искусственным
+						интеллектом.
+					</strong>
+					<p class="news__item-text">
+						«Институт развития цифровой экономики» (ИРЦЭ), резидент Кластера информационных технологий
+						Фонда...
+					</p>
+					<button class="btn__telegram news__item-btn">
+						<span>
+							Подробнее
+						</span>
+						<img src="img/@1x/btn-arrow.svg" alt="">
+					</button>
+				</div>
+
+				<!-- Item -->
+				<div class="news__item">
+					<figure class="news__item-holder">
+						<img src="img/@1x/news-2.jpg" alt="" class="news__item-img">
+						<span class="news__item-label">Новости</span>
+					</figure>
+					<strong class="news__item-title">
+						Резидент обеспечел Mars искусственным
+						интеллектом.
+					</strong>
+					<p class="news__item-text">
+						«Институт развития цифровой экономики» (ИРЦЭ), резидент Кластера информационных технологий
+						Фонда...
+					</p>
+					<button class="btn__telegram news__item-btn">
+						<span>
+							Подробнее
+						</span>
+						<img src="img/@1x/btn-arrow.svg" alt="">
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Cases -->
+
+	<section class="cases">
+		<div class="container">
+
+			<!-- Title -->
+			<h2 class="subtitle">Кейсы</h2>
+
+			<!-- Tabs -->
+			<div class="tabs__holder">
+
+				<!-- Tabs Title -->
+				<ul class="tabs__title">
+					<li class="tabs__title-item">
+						Распознавание образов в ритейле
+					</li>
+					<li class="tabs__title-item">
+						Производителям и дистрибьюторам
+						FMCG
+					</li>
+					<li class="tabs__title-item">
+						Транспортно-серверным компаниям
+					</li>
+					<li class="tabs__title-item">
+						Промышленным предприятиям
+					</li>
+					<li class="tabs__title-item">
+						ИТ-компаниям
+					</li>
+				</ul>
+
+				<!-- Tabs Content -->
+				<ul class="tabs__content">
+					<li class="tabs__content-item">
+						<strong class="tabs__content-title">
+							Распознавание образов в ритейле
+						</strong>
+						<p class="tabs__content-text">
+							Предлагаем не имеющее в мире аналогов комплексное решение ОПТИМУМ СкайНет Энжн для
+							автоматического распознавания и анализа изображений на мобильном устройстве, без подключения
+							к интернету.
+						</p>
+						<ul class="tabs__content-list">
+							<li>
+								Применение технологий искусственнного интеллекта - Умная полка
+							</li>
+							<li>
+								Увеличение производительности труда мерчендайзеров на 25-30%
+							</li>
+							<li>
+								Повышение достоверности информации «с полей» до 99%
+							</li>
+							<li>
+								Сокращение времени работы в торговой точке
+							</li>
+							<li>
+								Повышение эффективности работы полевой команды
+							</li>
+						</ul>
+
+						<button class="btn__telegram clients__btn">
+							<span>
+								Подробнее
+							</span>
+							<img src="img/@1x/btn-arrow.svg" alt="">
+						</button>
+
+					</li>
+					<li class="tabs__content-item">
+						<strong class="tabs__content-title">
+							Производителям и дистрибьюторам FMCG
+						</strong>
+						<p class="tabs__content-text">
+							Предлагаем не имеющее в мире аналогов комплексное решение ОПТИМУМ СкайНет Энжн для
+							автоматического распознавания и анализа изображений на мобильном устройстве, без подключения
+							к интернету.
+						</p>
+						<ul class="tabs__content-list">
+							<li>
+								Применение технологий искусственнного интеллекта - Умная полка
+							</li>
+							<li>
+								Увеличение производительности труда мерчендайзеров на 25-30%
+							</li>
+							<li>
+								Повышение достоверности информации «с полей» до 99%
+							</li>
+							<li>
+								Сокращение времени работы в торговой точке
+							</li>
+							<li>
+								Повышение эффективности работы полевой команды
+							</li>
+						</ul>
+
+						<button class="btn__telegram clients__btn">
+							<span>
+								Подробнее
+							</span>
+							<img src="img/@1x/btn-arrow.svg" alt="">
+						</button>
+					</li>
+					<li class="tabs__content-item">
+						<strong class="tabs__content-title">
+							Транспортно-серверным компаниям
+						</strong>
+						<p class="tabs__content-text">
+							Предлагаем не имеющее в мире аналогов комплексное решение ОПТИМУМ СкайНет Энжн для
+							автоматического распознавания и анализа изображений на мобильном устройстве, без подключения
+							к интернету.
+						</p>
+						<ul class="tabs__content-list">
+							<li>
+								Применение технологий искусственнного интеллекта - Умная полка
+							</li>
+							<li>
+								Увеличение производительности труда мерчендайзеров на 25-30%
+							</li>
+							<li>
+								Повышение достоверности информации «с полей» до 99%
+							</li>
+							<li>
+								Сокращение времени работы в торговой точке
+							</li>
+							<li>
+								Повышение эффективности работы полевой команды
+							</li>
+						</ul>
+
+						<button class="btn__telegram clients__btn">
+							<span>
+								Подробнее
+							</span>
+							<img src="img/@1x/btn-arrow.svg" alt="">
+						</button>
+					</li>
+					<li class="tabs__content-item">
+						<strong class="tabs__content-title">
+							Промышленным предприятиям
+						</strong>
+						<p class="tabs__content-text">
+							Предлагаем не имеющее в мире аналогов комплексное решение ОПТИМУМ СкайНет Энжн для
+							автоматического распознавания и анализа изображений на мобильном устройстве, без подключения
+							к интернету.
+						</p>
+						<ul class="tabs__content-list">
+							<li>
+								Применение технологий искусственнного интеллекта - Умная полка
+							</li>
+							<li>
+								Увеличение производительности труда мерчендайзеров на 25-30%
+							</li>
+							<li>
+								Повышение достоверности информации «с полей» до 99%
+							</li>
+							<li>
+								Сокращение времени работы в торговой точке
+							</li>
+							<li>
+								Повышение эффективности работы полевой команды
+							</li>
+						</ul>
+
+						<button class="btn__telegram clients__btn">
+							<span>
+								Подробнее
+							</span>
+							<img src="img/@1x/btn-arrow.svg" alt="">
+						</button>
+					</li>
+					<li class="tabs__content-item">
+						<strong class="tabs__content-title">
+							ИТ-компаниям
+						</strong>
+						<p class="tabs__content-text">
+							Предлагаем не имеющее в мире аналогов комплексное решение ОПТИМУМ СкайНет Энжн для
+							автоматического распознавания и анализа изображений на мобильном устройстве, без подключения
+							к интернету.
+						</p>
+						<ul class="tabs__content-list">
+							<li>
+								Применение технологий искусственнного интеллекта - Умная полка
+							</li>
+							<li>
+								Увеличение производительности труда мерчендайзеров на 25-30%
+							</li>
+							<li>
+								Повышение достоверности информации «с полей» до 99%
+							</li>
+							<li>
+								Сокращение времени работы в торговой точке
+							</li>
+							<li>
+								Повышение эффективности работы полевой команды
+							</li>
+						</ul>
+
+						<button class="btn__telegram clients__btn">
+							<span>
+								Подробнее
+							</span>
+							<img src="img/@1x/btn-arrow.svg" alt="">
+						</button>
+					</li>
+				</ul>
+			</div>
+
+			<!-- Accordeon -->
+			<div class="accordeon__holder">
+
+				<!-- Pair -->
+				<div class="accordeon__title">
+					Распознавание образов в ритейле
+				</div>
+				<div class="accordeon__content">
+						<strong class="tabs__content-title">
+								Распознавание образов в ритейле
+							</strong>
+							<p class="tabs__content-text">
+								Предлагаем не имеющее в мире аналогов комплексное решение ОПТИМУМ СкайНет Энжн для
+								автоматического распознавания и анализа изображений на мобильном устройстве, без подключения
+								к интернету.
+							</p>
+							<ul class="tabs__content-list">
+								<li>
+									Применение технологий искусственнного интеллекта - Умная полка
+								</li>
+								<li>
+									Увеличение производительности труда мерчендайзеров на 25-30%
+								</li>
+								<li>
+									Повышение достоверности информации «с полей» до 99%
+								</li>
+								<li>
+									Сокращение времени работы в торговой точке
+								</li>
+								<li>
+									Повышение эффективности работы полевой команды
+								</li>
+							</ul>
+	
+							<button class="btn__telegram clients__btn">
+								<span>
+									Подробнее
+								</span>
+								<img src="img/@1x/btn-arrow.svg" alt="">
+							</button>
+				</div>
+
+				<!-- Pair -->
+				<div class="accordeon__title">
+					Производителям и дистрибьюторам FMCG
+				</div>
+				<div class="accordeon__content">
+						<strong class="tabs__content-title">
+								Производителям и дистрибьюторам FMCG
+							</strong>
+							<p class="tabs__content-text">
+								Предлагаем не имеющее в мире аналогов комплексное решение ОПТИМУМ СкайНет Энжн для
+								автоматического распознавания и анализа изображений на мобильном устройстве, без подключения
+								к интернету.
+							</p>
+							<ul class="tabs__content-list">
+								<li>
+									Применение технологий искусственнного интеллекта - Умная полка
+								</li>
+								<li>
+									Увеличение производительности труда мерчендайзеров на 25-30%
+								</li>
+								<li>
+									Повышение достоверности информации «с полей» до 99%
+								</li>
+								<li>
+									Сокращение времени работы в торговой точке
+								</li>
+								<li>
+									Повышение эффективности работы полевой команды
+								</li>
+							</ul>
+	
+							<button class="btn__telegram clients__btn">
+								<span>
+									Подробнее
+								</span>
+								<img src="img/@1x/btn-arrow.svg" alt="">
+							</button>
+				</div>
+
+				<!-- Pair -->
+				<div class="accordeon__title">
+					Транспортно-серверным компаниям
+				</div>
+				<div class="accordeon__content">
+						<strong class="tabs__content-title">
+								Транспортно-серверным компаниям
+							</strong>
+							<p class="tabs__content-text">
+								Предлагаем не имеющее в мире аналогов комплексное решение ОПТИМУМ СкайНет Энжн для
+								автоматического распознавания и анализа изображений на мобильном устройстве, без подключения
+								к интернету.
+							</p>
+							<ul class="tabs__content-list">
+								<li>
+									Применение технологий искусственнного интеллекта - Умная полка
+								</li>
+								<li>
+									Увеличение производительности труда мерчендайзеров на 25-30%
+								</li>
+								<li>
+									Повышение достоверности информации «с полей» до 99%
+								</li>
+								<li>
+									Сокращение времени работы в торговой точке
+								</li>
+								<li>
+									Повышение эффективности работы полевой команды
+								</li>
+							</ul>
+	
+							<button class="btn__telegram clients__btn">
+								<span>
+									Подробнее
+								</span>
+								<img src="img/@1x/btn-arrow.svg" alt="">
+							</button>
+				</div>
+
+				<!-- Pair -->
+				<div class="accordeon__title">
+					Промышленным предприятиям
+				</div>
+				<div class="accordeon__content">
+						<strong class="tabs__content-title">
+								Промышленным предприятиям
+							</strong>
+							<p class="tabs__content-text">
+								Предлагаем не имеющее в мире аналогов комплексное решение ОПТИМУМ СкайНет Энжн для
+								автоматического распознавания и анализа изображений на мобильном устройстве, без подключения
+								к интернету.
+							</p>
+							<ul class="tabs__content-list">
+								<li>
+									Применение технологий искусственнного интеллекта - Умная полка
+								</li>
+								<li>
+									Увеличение производительности труда мерчендайзеров на 25-30%
+								</li>
+								<li>
+									Повышение достоверности информации «с полей» до 99%
+								</li>
+								<li>
+									Сокращение времени работы в торговой точке
+								</li>
+								<li>
+									Повышение эффективности работы полевой команды
+								</li>
+							</ul>
+	
+							<button class="btn__telegram clients__btn">
+								<span>
+									Подробнее
+								</span>
+								<img src="img/@1x/btn-arrow.svg" alt="">
+							</button>
+				</div>
+
+				<!-- Pair -->
+				<div class="accordeon__title">
+					ИТ-компаниям
+				</div>
+				<div class="accordeon__content">
+						<strong class="tabs__content-title">
+								ИТ-компаниям
+							</strong>
+							<p class="tabs__content-text">
+								Предлагаем не имеющее в мире аналогов комплексное решение ОПТИМУМ СкайНет Энжн для
+								автоматического распознавания и анализа изображений на мобильном устройстве, без подключения
+								к интернету.
+							</p>
+							<ul class="tabs__content-list">
+								<li>
+									Применение технологий искусственнного интеллекта - Умная полка
+								</li>
+								<li>
+									Увеличение производительности труда мерчендайзеров на 25-30%
+								</li>
+								<li>
+									Повышение достоверности информации «с полей» до 99%
+								</li>
+								<li>
+									Сокращение времени работы в торговой точке
+								</li>
+								<li>
+									Повышение эффективности работы полевой команды
+								</li>
+							</ul>
+	
+							<button class="btn__telegram clients__btn">
+								<span>
+									Подробнее
+								</span>
+								<img src="img/@1x/btn-arrow.svg" alt="">
+							</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<section style="min-height: 400px" class="page__footer"></section>
+
 	<script src="js/scripts.min.js"></script>
 
 </body>
+
 </html>
