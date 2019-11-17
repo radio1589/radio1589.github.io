@@ -21,6 +21,9 @@
 	<!-- Custom Browsers Color Start -->
 	<meta name="theme-color" content="#000">
 	<!-- Custom Browsers Color End -->
+
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=a7b30fb9-b737-4027-aa9d-ba8ec8b54cfa&lang=ru_RU" type="text/javascript">
+    </script>
 	<link
 		href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Open+Sans:400,600,700|Roboto:400,700&display=swap&subset=cyrillic"
 		rel="stylesheet">
@@ -52,6 +55,16 @@
 					<span class="account__text">Личный кабинет</span>
 					<span class="account__btn"></span>
 				</a>
+
+				<div class="close-mobile-menu-btn">
+					<svg class="ham hamRotate180 ham5" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+                        <path class="line top" d="m 30,33 h 40 c 0,0 8.5,-0.68551 8.5,10.375 0,8.292653 -6.122707,9.002293 -8.5,6.625 l -11.071429,-11.071429">
+                        </path>
+                        <path class="line middle" d="m 70,50 h -40"></path>
+                        <path class="line bottom" d="m 30,67 h 40 c 0,0 8.5,0.68551 8.5,-10.375 0,-8.292653 -6.122707,-9.002293 -8.5,-6.625 l -11.071429,11.071429">
+                        </path>
+                    </svg>
+				</div>
 			</div>
 
 			<!-- Header Main -->
@@ -63,7 +76,7 @@
 				</a>
 
 				<!-- Main Nav -->
-				<nav class="main-nav">
+				<nav class="main-nav main-nav__mobile">
 					<ul class="main-nav__list">
 						<li class="main-nav__item">
 							<a href="#" class="main-nav__link">
@@ -260,7 +273,41 @@
 
 				<!-- Left Col -->
 				<div class="col col-xs-12 col-sm-12 col-md-6 about-company__left">
-					<img src="img/@1x/company-photo.jpg" alt="">
+					<div class="row about-company__photos justify-content-xs-center">
+						<div class="about-company__photos-small col col-xs-10 col-sm-6">
+							<figure>
+									<img src="img/@1x/1.jpg" alt="">
+									<p class="about-company__photos-text">
+										<strong>25</strong>
+										<span>
+											человек работает в штате
+										</span>
+									</p>
+							</figure>
+						</div>
+						<div class="about-company__photos-small col col-xs-10 col-sm-6">
+								<figure>
+										<img src="img/@1x/2.jpg" alt="">
+										<p class="about-company__photos-text">
+												<strong>25</strong>
+												<span>
+													человек работает в штате
+												</span>
+										</p>
+								</figure>
+						</div>
+						<div class="about-company__photos-big col col-xs-10 col-sm-12">
+								<figure>
+										<img src="img/@1x/3.jpg" alt="">
+										<p class="about-company__photos-text">
+												<strong>25</strong>
+												<span>
+													человек работает в штате
+												</span>
+										</p>
+								</figure>
+						</div>
+					</div>
 				</div>
 
 				<!-- Right Col -->
@@ -351,6 +398,7 @@
 					<!-- Right -->
 					<div class="clients__item-right">
 						<img src="img/@1x/map.png" alt="">
+						<div id="map-kz"></div>
 					</div>
 				</div>
 
@@ -382,6 +430,7 @@
 					<!-- Right -->
 					<div class="clients__item-right">
 						<img src="img/@1x/map.png" alt="">
+						<div id="map-kz-2"></div>
 					</div>
 				</div>
 
@@ -413,6 +462,7 @@
 					<!-- Right -->
 					<div class="clients__item-right">
 						<img src="img/@1x/map.png" alt="">
+						<div id="map-kz-3"></div>
 					</div>
 				</div>
 			</div>
@@ -432,6 +482,7 @@
 				<!-- Item -->
 				<div class="news__item
 					col col-xs-8 col-sm-6 col-lg-3">
+					<div class="news__item-wrapper">
 					<figure class="news__item-holder">
 						<img src="img/@1x/news-1.jpg" alt="" class="news__item-img">
 						<span class="news__item-label">Новости</span>
@@ -450,11 +501,13 @@
 						</span>
 						<img src="img/@1x/btn-arrow.svg" alt="">
 					</button>
+					</div>
 				</div>
 
 				<!-- Item -->
 				<div class="news__item
 					col col-xs-8 col-sm-6 col-lg-3">
+					<div class="news__item-wrapper">
 					<figure class="news__item-holder">
 						<img src="img/@1x/news-2.jpg" alt="" class="news__item-img">
 						<span class="news__item-label">Новости</span>
@@ -473,11 +526,13 @@
 						</span>
 						<img src="img/@1x/btn-arrow.svg" alt="">
 					</button>
+					</div>
 				</div>
 
 				<!-- Item -->
 				<div class="news__item
 					col col-xs-8 col-sm-6 col-lg-3">
+					<div class="news__item-wrapper">
 					<figure class="news__item-holder">
 						<img src="img/@1x/news-1.jpg" alt="" class="news__item-img">
 						<span class="news__item-label">Новости</span>
@@ -496,11 +551,13 @@
 						</span>
 						<img src="img/@1x/btn-arrow.svg" alt="">
 					</button>
+					</div>
 				</div>
 
 				<!-- Item -->
 				<div class="news__item
 					col col-xs-8 col-sm-6 col-lg-3">
+					<div class="news__item-wrapper">
 					<figure class="news__item-holder">
 						<img src="img/@1x/news-2.jpg" alt="" class="news__item-img">
 						<span class="news__item-label">Новости</span>
@@ -519,6 +576,7 @@
 						</span>
 						<img src="img/@1x/btn-arrow.svg" alt="">
 					</button>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -987,6 +1045,7 @@
 
 	<!-- Map -->
 	<div class="yandex-map">
+		<div id="map" style="width: 100%; height: 500px"></div>
 		<div class="container">
 			<div class="yandex-map__info">
 				<strong class="yandex-map__title">
@@ -1064,7 +1123,7 @@
 				</a>
 
 				<!-- Main Nav -->
-				<nav class="main-nav">
+				<nav class="main-nav main-nav__footer">
 					<ul class="main-nav__list">
 						<li class="main-nav__item">
 							<a href="#" class="main-nav__link">
@@ -1115,6 +1174,57 @@
 			</div>
 		</div>
 	</section>
+	<script type="text/javascript">
+		// Функция ymaps.ready() будет вызвана, когда
+		// загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+		ymaps.ready(init);
+		function init(){
+			// Создание карты.
+			var myMap = new ymaps.Map("map", {
+				// Координаты центра карты.
+				// Порядок по умолчанию: «широта, долгота».
+				// Чтобы не определять координаты центра карты вручную,
+				// воспользуйтесь инструментом Определение координат.
+				center: [55.694002539298445,37.35214249999998],
+				// Уровень масштабирования. Допустимые значения:
+				// от 0 (весь мир) до 19.
+				zoom: 7
+			});
+
+			var mapkz = new ymaps.Map("map-kz", {
+				// Координаты центра карты.
+				// Порядок по умолчанию: «широта, долгота».
+				// Чтобы не определять координаты центра карты вручную,
+				// воспользуйтесь инструментом Определение координат.
+				center: [48.136207, 67.153550],
+				// Уровень масштабирования. Допустимые значения:
+				// от 0 (весь мир) до 19.
+				zoom: 7
+			});
+
+			var mapkz2 = new ymaps.Map("map-kz-2", {
+				// Координаты центра карты.
+				// Порядок по умолчанию: «широта, долгота».
+				// Чтобы не определять координаты центра карты вручную,
+				// воспользуйтесь инструментом Определение координат.
+				center: [48.136207, 67.153550],
+				// Уровень масштабирования. Допустимые значения:
+				// от 0 (весь мир) до 19.
+				zoom: 7
+			});
+
+			var mapk3 = new ymaps.Map("map-kz-3", {
+				// Координаты центра карты.
+				// Порядок по умолчанию: «широта, долгота».
+				// Чтобы не определять координаты центра карты вручную,
+				// воспользуйтесь инструментом Определение координат.
+				center: [48.136207, 67.153550],
+				// Уровень масштабирования. Допустимые значения:
+				// от 0 (весь мир) до 19.
+				zoom: 7
+			});
+		}
+	</script>
 	<script src="js/scripts.min.js"></script>
 
 </body>
