@@ -1,0 +1,95 @@
+
+@import 'helpers';
+
+.header {
+   
+}
+
+.header__holder {
+    @include flex;
+    min-height: 100px;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 30px;
+}
+
+.delivery__text {
+    color: $greyColor;
+}
+
+.header__phone {
+    margin-left: auto;
+    @include flex;
+    flex-direction: column;
+}
+
+.header__phone-num {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 20px;
+        height: 20px;
+        display: block;
+        background: url('../img/icon-phone.svg') no-repeat;
+        background-position: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.header__phone-text {
+    color: $greyColor;
+    font-size: 14px;
+    text-align: right;
+}
+
+// Jumbotron
+
+.jumbotron {
+    padding-top: 110px;
+    min-height: 780px;
+    color: #fff;
+    background: url('../img/jumbotron-bg.jpg') no-repeat;
+    @include border;
+}
+
+.jumbotron__col {
+    @include col();
+    @include size(6);
+}
+
+.jumbotron__col--left {
+    text-align: center;
+    img {
+        width: auto;
+    }
+}
+
+.jumbotron__col--right {
+    margin-top: 50px;
+}
+
+.jumbotron__text-subtitle {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.jumbotron__text-title {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+.jumbotron__text-desc {
+    max-width: 500px;
+}

@@ -1,0 +1,12 @@
+
+@import 'normalize.scss';
+@import 'smart-grid';
+@import 'helpers';
+
+body {
+    line-height: 1.6em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+// Include blocks
+@import 'header';
