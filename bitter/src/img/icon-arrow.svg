@@ -1,3 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="9" viewBox="0 0 31 9">
-  <image id="стрелка" width="31" height="9" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAJCAQAAABgKD80AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjCxcMGg64lbMDAAAAaklEQVQoz52QsQ1AYBhETyQKiULij5ZWI2hV9tCojWITK4jEBmzAAozwFCbw3TXXvOTyhAztqb5lgcXMQ2PHQxZuauTRqtD/BBqVqvOYNBhwyVek1XZe5FzsJDY442THWdVtHDi7+ZL4Wy9x4+cIrr1x9QAAAABJRU5ErkJggg=="/>
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 1;
+      }
+    </style>
+  </defs>
+  <image id="Фигура_4" data-name="Фигура 4" class="cls-1" width="31" height="9" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAJCAQAAABgKD80AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjCxcSIjUIuWimAAAAaklEQVQoz53QMQ4BUQCE4e+tRKWgkKDQKkXjCHoHkHU16wCupCLRafZF9dxhpv8n/0xpgux9vKFLaDu9TY4/vFysKW1rGRRMHM3cSjs5RAadqWeJrmPhqhqy7XO9ajBm+NnP3Ugmv/JV4Q8R2RYXB5SI+gAAAABJRU5ErkJggg=="/>
 </svg>
