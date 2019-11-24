@@ -31,7 +31,9 @@
                 <!-- Header Phone -->
                 <div class="header__phone">
                     <strong class="header__phone-num">
-                        8 800 000-00-00
+                        <a href="tel:8 800 000-00-00">
+                            8 800 000-00-00
+                        </a>
                     </strong>
                     <span class="header__phone-text">
                         Звонок бесплатный
@@ -66,10 +68,11 @@
 
                         <!-- Form -->
 
-                        <button class="btn jumbotron__btn--md">
+                        <button href="#form-popup" class="btn jumbotron__btn--md learn-more-btn">
                             Узнать
                         </button>
-                        <div class="form-holder">
+                        
+                        <div class="form-holder wow fadeInUp">
                             <form action="#" class="form jumbotron__form">
                                 <legend>
                                     Узнайте о бальзаме подробнее
@@ -233,6 +236,28 @@
     <footer class="footer" style="min-height:400px">
 
     </footer>
+
+     <!-- PopUp -->
+
+    <!-- Jumbotron form -->
+    <form id="form-popup" action="#" class="form jumbotron__form jumbotron__form--md
+    white-popup mfp-hide">
+        <legend>
+            Узнайте о бальзаме подробнее
+        </legend>
+        <p>
+            <input id="name" type="text" value="Имя">
+            <input type="tel" value="Телефон">
+        </p>
+        <button class="btn jumbotron__form-btn">
+            <span>Узнать</span>
+            <img src="img/icon-arrow.png" alt="">
+        </button>
+    </form>
+
+   
+    <!-- Js -->
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
