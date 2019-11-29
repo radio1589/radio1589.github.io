@@ -2,6 +2,7 @@
 // variables
 
 $greyColor: #9a9a9a;
+$greenColor: #7eb252;
 
 // mixins
 
@@ -42,4 +43,61 @@ $greyColor: #9a9a9a;
 	height: 1px !important; 
 	width: 1px !important; 
 	overflow: hidden;
+}
+
+.form-holder {
+	margin-top: 50px;
+	padding: 20px;
+	color: #000;
+	background: #fff;
+}
+
+.form {
+
+	legend {
+		color: #000;
+		font-size: 14px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+	input {
+		padding-bottom: 5px;
+		color: $greenColor;
+		border: none;
+		outline: none;
+		border-bottom: 1px solid $greenColor;
+	}
+}
+
+.btn {
+	padding: 25px 70px;
+	border: none;
+	outline: none;
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	background: $greenColor;
+	cursor: pointer;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	transition: all .4s;
+
+	img {
+		width: auto;
+		margin-left: 15px;
+		opacity: 0.5;
+	}
+
+	&:hover {
+		background: darken($greenColor, 10%);
+
+		img {
+			opacity: 1;
+		}
+	}
 }

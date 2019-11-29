@@ -1,0 +1,110 @@
+
+@import 'helpers';
+
+.reasons {
+    margin-top: 100px;
+}
+
+.reasons__col {
+    @include col();
+    @include size(6);
+    @include size-md(12);
+}
+
+.reasons__label {
+    margin-top: -6px;
+    padding: 25px;
+    padding-bottom: 0px;
+    border: 1px solid $greenColor;
+    position: relative;
+    z-index: 2;
+    background: #fff;
+
+    @include md-block() {
+        padding: 5px 20px;
+    }
+}
+
+.reasons__label-text {
+    padding: 25px 15px;
+    padding-bottom: 0px;
+    font-weight: 600;
+
+    @include md-block() {
+        text-align: center;
+    }
+
+    @include xs-block() {
+        padding: 0px;
+    }
+}
+
+.reasons__btn {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.reasons__col--right {
+    align-self: center;
+
+    @include md-block() {
+        order: -1;
+    }
+}
+
+.reasons__title {
+    margin-bottom: 60px;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 60px;
+
+    @include md-block() {
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+    }
+}
+
+.reasons__subtitle {
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+
+    @include md-block() {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.reasons__list-item {
+    padding-left: 40px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    position: relative;
+
+    @include md-block() {
+        margin-bottom: 60px;
+        padding-left: 0px;
+        text-align: center;
+    }
+
+    &::before {
+        content: '';
+        width: 9px;
+        height: 13px;
+        display: block;
+        background: url('../img/icon-reasons.svg') no-repeat;
+        background-size: 100%;
+        background-position: center;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+
+        @include md-block() {
+            display: none;
+        }
+    }
+}

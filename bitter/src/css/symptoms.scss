@@ -1,0 +1,119 @@
+
+@import 'helpers';
+
+.symptoms {
+    margin-top: 100px;
+}
+
+.symptoms__col {
+    @include col();
+    @include size(6);
+    @include size-md(12);
+}
+
+.symptoms-title {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 60px;
+
+    @include md-block() {
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+    }
+}
+
+.symptoms-list {
+    margin-top: 80px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.symptoms-list__item {
+    margin-bottom: 50px;
+    @include flex;
+    align-items: center;
+}
+
+.symptoms-list__item-num {
+    margin-right: 25px;
+    color: $greenColor;
+
+    @include sm-block() {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.symptoms-list__item-text {
+    
+    @include sm-block() {
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.symptoms-img__holder {
+    overflow: hidden;
+
+    @include xs-block() {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.symptoms-img {
+    transition: all .4s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.symptoms__label {
+    padding-top: 25px;
+    margin-top: -200px;
+    background: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+.symptoms__label-text {
+    padding: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-weight: 600;
+    border: 1px solid $greenColor;
+
+    @include xs-block() {
+        padding: 15px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+a.symptoms__label-link {
+    padding-left: 5px;
+    padding-right: 5px;
+    display: inline-block;
+    transform: translateY(62px);
+    font-size: 14px;
+    font-weight: normal;
+    color: $greenColor;
+    text-decoration: underline;
+    background: #fff;
+
+    @include xs-block() {
+        margin-top: 20px;
+        transform: translateY(0px);
+        width: 100%;
+        text-align: right;
+    }
+}
+
+.symptoms__label-btn {
+    width: 100%;
+    margin-top: 50px;
+}

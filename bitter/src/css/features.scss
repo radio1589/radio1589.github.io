@@ -1,0 +1,65 @@
+
+@import 'helpers';
+
+.features {
+    margin-top: 100px;
+
+    .row {
+        @include xs-block() {
+            justify-content: center;
+        }
+    }
+}
+
+.features__item {
+    @include col();
+    @include size(3);
+    @include size-md(6);
+    @include size-xs(10);
+    @include size-xxs(12);
+    padding: 50px;
+    position: relative;
+
+    @include lg-block() {
+        padding: 25px;
+    }
+
+    @include md-block() {
+        margin-bottom: 20px;
+        padding: 25px 15px;
+        text-align: center;
+    }
+
+    @include xxs-block() {
+        padding: 25px 0px;
+    }
+
+    &::before {
+        content: '';
+        width: 25px;
+        height: 25px;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url('../img/circle-decor.svg') no-repeat;
+        background-size: 100%;
+        opacity: .5;
+
+        @include md-block() {
+            display: none;
+        }
+    }
+}
+
+.features__item-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: $greenColor;
+    border-bottom: 3px solid $greenColor;
+}
+
+.features__item-text {
+    margin-top: 30px;
+    font-weight: 600;
+}

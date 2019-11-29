@@ -1,6 +1,8 @@
 
 @import 'normalize.scss';
 @import 'smart-grid';
+@import 'magnific-popup';
+@import 'animate';
 @import 'helpers';
 
 body {
@@ -9,4 +11,10 @@ body {
 }
 
 // Include blocks
+
 @import 'header';
+@import 'features';
+@import 'symptoms';
+@import 'reasons';
+@import 'story';
+@import 'holds';

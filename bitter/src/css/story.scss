@@ -1,0 +1,125 @@
+
+@import 'helpers';
+
+.story {
+    margin-top: 100px;
+
+    .row {
+        @include md-block() {
+            justify-content: center;
+        }
+    }
+}
+
+.story__title {
+    margin-bottom: 60px;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 60px;
+
+    @include md-block() {
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+    }
+}
+
+.story__text {
+    padding: 25px;
+    background: darken(#fff, 5%);
+    transform: translateX(50px);
+
+    @include md-block() {
+        transform: translateX(0px);
+    }
+}
+
+.story__col {
+    @include col();
+    @include size(6);
+    @include size-md(12);
+}
+
+.story__col--right {
+    @include size-md(6);
+    @include size-sm(8);
+    @include size-xs(10);
+    @include size-xxs(12);
+    margin-top: 40px;
+}
+
+.author-quote {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include md-block() {
+        margin-top: 40px;
+    }
+}
+
+.author-quote__text {
+    padding-top: 60px;
+    padding-left: 35px;
+    padding-right: 35px;
+    width: 770px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 40px;
+    text-align: center;
+    border-top: 2px solid $greenColor;
+
+    @include md-block() {
+        padding-top: 30px;
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 600px;
+    }
+
+    @include sm-block() {
+        width: 100%;
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+
+.author-quote__desc {
+    padding-bottom: 60px;
+    padding-left: 35px;
+    padding-right: 35px;
+    width: 770px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 2px solid $greenColor;
+
+    @include md-block() {
+        padding-top: 30px;
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 600px;
+    }
+
+    @include sm-block() {
+        width: 100%;
+        padding-bottom: 30px;
+    }
+}
+
+.author-quote__name {
+    
+    @include sm-block() {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.author-quote__date {
+    color: darken(#fff, 30%);
+
+    @include sm-block() {
+        width: 100%;
+        text-align: center;
+    }
+}
