@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+
+    <!-- Header Mobile -->
+    <header class="page-header__mobile">
+        <div class="container">
+            <div class="row">
+
+                <!-- Logo -->
+                <a href="#" class="logo">
+                    <span class="logo__name">Sexshopmania</span>
+                    <img src="img/logo.svg" alt="" class="logo__img">
+                    <span class="logo__domen">ua</span>
+                </a>
+
+                <!-- Show Menu Btn -->
+                <a href="#" class="show-menu__btn">
+                    <svg class="ham hamRotate180 ham5" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+                        <path
+                              class="line top"
+                              d="m 30,33 h 40 c 0,0 8.5,-0.68551 8.5,10.375 0,8.292653 -6.122707,9.002293 -8.5,6.625 l -11.071429,-11.071429" />
+                        <path
+                              class="line middle"
+                              d="m 70,50 h -40" />
+                        <path
+                              class="line bottom"
+                              d="m 30,67 h 40 c 0,0 8.5,0.68551 8.5,-10.375 0,-8.292653 -6.122707,-9.002293 -8.5,-6.625 l -11.071429,11.071429" />
+                      </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Header -->
+    <header class="page-header">
+        <div class="container">
+
+            <!-- Top -->
+            <div class="row page-header__top">
+
+                <!-- Contact List -->
+                <ul class="contact-list">
+                    <li class="contact-list__item">
+                        <a href="#" class="contact-list__link">
+                            8 800 100 04 94
+                        </a>
+                    </li>
+                    <li class="contact-list__item">
+                        <a href="mailto:order@sexmaniashop.ua" class="contact-list__link">
+                            order@sexmaniashop.ua
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Site Navigation -->
+                <ul class="site-navigation">
+                    <li class="site-navigation__item">
+                        <a href="#" class="site-navigation__link">
+                            Доставка
+                        </a>
+                    </li>
+                    <li class="site-navigation__item">
+                        <a href="#" class="site-navigation__link">
+                            Оплата
+                        </a>
+                    </li>
+                    <li class="site-navigation__item">
+                        <a href="#" class="site-navigation__link">
+                            Конфиденциальность
+                        </a>
+                    </li>
+                    <li class="site-navigation__item">
+                        <a href="#" class="site-navigation__link">
+                            Блог
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="social-menu">
+                    <li class="social-menu__item">
+                        <a href="https://facebook.com" class="social-menu__link" aria-label="Facebook"
+                            target="_blank">
+                            <img src="img/facebook_icon.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="social-menu__item">
+                        <a href="https://instagram.com" class="social-menu__link" aria-label="Instagram">
+                            <img src="img/instagram_icon.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="social-menu__item">
+                        <a href="https://telegram.com" class="social-menu__link" aria-label="Telegram">
+                            <img src="img/telegram_icon.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Bottom -->
+            <div class="row page-header__bottom">
+
+                <!-- Logo -->
+                <a href="#" class="logo">
+                    <span class="logo__name">Sexshopmania</span>
+                    <img src="img/logo.svg" alt="" class="logo__img">
+                    <span class="logo__domen">ua</span>
+                </a>
+
+                <!-- Search Form -->
+                <form action="#" class="search-form">
+                    <input type="search" placeholder="Что вы ищите?">
+                    <button type="submit"></button>
+                </form>
+
+                <!-- User Interface -->
+                <div class="user-interface">
+
+                    <!-- Location -->
+                <a href="#" class="location">
+                    Киев
+                </a>
+
+                <!-- Login -->
+                <div class="login islogin"></div>
+
+                <!-- Shoping Cart -->
+                <div class="shoping-cart">
+                        <figure class="shoping-cart__img shoping-cart__contains">
+                        <img src="img/cart-icon.svg" alt="">
+                    </figure>
+                    <div class="shoping-cart__txt">
+                        <span class="shoping-cart__goods">6 товаров</span>
+                        <span class="shoping-cart__sum">7 183 грн</span>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Nav -->
+    <nav class="mobile-menu">
+
+        <!-- Catalog -->
+        <aside class="catalog catalog__mobile">
+                
+            <div class="user-interface user-interface__mobile">
+
+            <!-- Login -->
+            <ul class="login-mobile">
+                <li class="login-mobile__item">
+                    <a href="#" class="login-mobile__link">Выход</a>
+                </li>
+                <!--<li class="login-mobile__item">
+                    <a href="#" class="login-mobile__link">Вход</a>
+                </li>
+                <li class="login-mobile__item">
+                    <span>|</span>
+                </li>
+                <li class="login-mobile__item">
+                    <a href="#" class="login-mobile__link">Регистрация</a>
+                </li>-->
+            </ul>
+
+            <!-- Shoping Cart -->
+            <div class="shoping-cart shoping-cart__mobile">
+                <figure class="shoping-cart__img shoping-cart__contains">
+                    <img src="img/cart-icon.svg" alt="">
+                </figure>
+            </div>
+
+            <!-- Site Navigation -->
+            <ul class="site-navigation site-navigation__mobile">
+                <li class="site-navigation__item">
+                    <a href="#" class="site-navigation__link">
+                        Доставка
+                    </a>
+                </li>
+                <li class="site-navigation__item">
+                    <a href="#" class="site-navigation__link">
+                        Оплата
+                    </a>
+                </li>
+                <li class="site-navigation__item">
+                    <a href="#" class="site-navigation__link">
+                        Конфиденциальность
+                    </a>
+                </li>
+                <li class="site-navigation__item">
+                    <a href="#" class="site-navigation__link">
+                        Блог
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Contact List -->
+            <ul class="contact-list contact-list__mobile">
+                <li class="contact-list__item">
+                    <a href="#" class="contact-list__link">
+                        8 800 100 04 94
+                    </a>
+                </li>
+                <li class="contact-list__item">
+                    <a href="mailto:order@sexmaniashop.ua" class="contact-list__link">
+                        order@sexmaniashop.ua
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+    </nav>
+
+    <!-- Main Screen -->
+    <section class="main-screen">
+        <div class="container">
+            <div class="row">
+
+                <!-- Catalog -->
+                <aside class="catalog">
+                    <h2 class="catalog-title">Каталог</h2>
+
+                    <ul class="catalog-list">
+                        <li class="catalog-list__item">
+                            <a href="#" class="catalog-list__link">
+                                Фаллоимитаторы
+                            </a>
+                        </li>
+                        <li class="catalog-list__item">
+                            <a href="#" class="catalog-list__link">
+                                БДСМ и садо-мазо товары
+                            </a>
+                        </li>
+                        <li class="catalog-list__item">
+                            <a href="#" class="catalog-list__link">
+                                Анальные игрушки
+                            </a>
+                        </li>
+                        <li class="catalog-list__item">
+                            <a href="#" class="catalog-list__link">
+                                Секс товары для мужчин
+                            </a>
+                        </li>
+                        <li class="catalog-list__item">
+                            <a href="#" class="catalog-list__link">
+                                Секс товары для женщин
+                            </a>
+                        </li>
+                        <li class="catalog-list__item">
+                            <a href="#" class="catalog-list__link">
+                                Страпоны и фаллопротезы
+                            </a>
+                        </li>
+                        <li class="catalog-list__item">
+                            <a href="#" class="catalog-list__link">
+                                Вибраторы
+                            </a>
+                        </li>
+                        <li class="catalog-list__item">
+                            <a href="#" class="catalog-list__link">
+                                Косметика с феромонами
+                            </a>
+                        </li>
+                        <li class="catalog-list__item">
+                            <a href="#" class="catalog-list__link">
+                                Смазки и лубриканты
+                            </a>
+                        </li>
+                        <li class="catalog-list__item">
+                            <a href="#" class="catalog-list__link">
+                                Приятные мелочи
+                            </a>
+                        </li>
+                        <li class="catalog-list__item">
+                            <a href="#" class="catalog-list__link">
+                                Секс мебель и качели
+                            </a>
+                        </li>
+                        <li class="catalog-list__item">
+                            <a href="#" class="catalog-list__link">
+                                Купальники
+                            </a>
+                        </li>
+                        <li class="catalog-list__item">
+                            <a href="#" class="catalog-list__link">
+                                Трусики
+                            </a>
+                        </li>
+                        <li class="catalog-list__item">
+                            <a href="#" class="catalog-list__link">
+                                Бюстгальтеры игрушки
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+
+                <!-- Banner -->
+                <div class="banner">
+                    
+                    <!-- Banner txt -->
+                    <div class="banner-txt">
+                        <h1 class="banner-txt__title">
+                            Подари себе удовольствие
+                        </h1>
+                        <p class="banner-txt__description">
+                            Хотите разнообразить личную жизнь, испытать свежие ощущения и эмоции? 
+                            Тогда вы не зря заглянули в наш виртуальный онлайн секс-шоп, 
+                            где помогают получить реальное удовольствие!
+                        </p>
+                        <a href="#" class="show-goods-btn">
+                            Посмотреть товары
+                        </a>
+
+                        <!-- Paymant method -->
+                        <ul class="paymant-method-list">
+                            <li class="paymant-method-list__item">
+                                <img src="img/mir-icon.svg" alt="">
+                            </li>
+                            <li class="paymant-method-list__item">
+                                <img src="img/mastercard-icon.svg" alt="">
+                            </li>
+                            <li class="paymant-method-list__item">
+                                <img src="img/maestro-icon.svg" alt="">
+                            </li>
+                            <li class="paymant-method-list__item">
+                                <img src="img/visa-icon.svg" alt="">
+                            </li>
+                        </ul>
+
+                        <!-- Discount -->
+                        <strong class="banner-txt__discount">
+                            Скидка 10% при оплате онлайн до 8 марта 2021 года!
+                        </strong>
+                    </div>
+
+                    <!-- Banner Img -->
+                    <figure class="banner-img">
+                        <img src="img/banner-girl-photo.png" alt="">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <div class="row">
+
+                <!-- Features -->
+                <div class="features-block">
+                    <h2 class="caption">Наши преимущества</h2>
+                    <ul class="features-list">
+                        <li class="features-list__item">
+                            <img src="img/features-icon-1.svg" alt="">
+                            <p>
+                                Только <strong>проверенные поставщики</strong>
+                            </p>
+                        </li>
+                        <li class="features-list__item">
+                            <img src="img/features-icon-2.svg" alt="">
+                            <p>
+                                <strong>Полная анонимность -</strong>
+                                менеджер и курьерская служба знают состав заказа
+                            </p>
+                        </li>
+                        <li class="features-list__item">
+                            <img src="img/features-icon-3.svg" alt="">
+                            <p>
+                                Накопительная <strong>система скидок</strong>
+                            </p>
+                        </li>
+                        <li class="features-list__item">
+                            <img src="img/features-icon-4.svg" alt="">
+                            <p>
+                                <strong>Скидка</strong>
+                                при оплате онлайн <strong>- 10%</strong>
+                            </p>
+                        </li>
+                        <li class="features-list__item">
+                            <img src="img/features-icon-5.svg" alt="">
+                            <p>
+                                Доставка по всей Украине
+                                <strong>- 300 грн</strong>
+                            </p>
+                        </li>
+                        <li class="features-list__item">
+                            <img src="img/features-icon-6.svg" alt="">
+                            <p>
+                                При заказе от 3000 грн
+                                <strong>доставка по всей Украине - бесплатно!</strong>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Blog -->
+                <div class="blog">
+                    <h2 class="caption">Блог</h2>
+                    <ul class="blog-list">
+                        <li class="blog-list__item">
+                            <img src="img/blog-prev-1.png" alt="" class="blog-list__img">
+                            <strong class="blog-list__caption">
+                                Металлические наручники Beginners Metal Cuffs
+                            </strong>
+                            <a href="#" class="blog-list__link">
+                                <img src="img/arrow-icon.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="blog-list__item">
+                            <img src="img/blog-prev-2.png" alt="" class="blog-list__img">
+                            <strong class="blog-list__caption">
+                                Металлические наручники Beginners Metal Cuffs
+                            </strong>
+                            <a href="#" class="blog-list__link">
+                                <img src="img/arrow-icon.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="blog-list__item">
+                            <img src="img/blog-prev-3.png" alt="" class="blog-list__img">
+                            <strong class="blog-list__caption">
+                                Металлические наручники Beginners Metal Cuffs
+                            </strong>
+                            <a href="#" class="blog-list__link">
+                                <img src="img/arrow-icon.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="blog-list__item">
+                            <img src="img/blog-prev-4.png" alt="" class="blog-list__img">
+                            <strong class="blog-list__caption">
+                                Металлические наручники Beginners Metal Cuffs
+                            </strong>
+                            <a href="#" class="blog-list__link">
+                                <img src="img/arrow-icon.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="blog-show-more-btn">
+                        Все записи
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category -->
+    <section class="category">
+        <div class="container">
+            <div class="row">
+                <h2 class="caption">
+                    Категории товаров
+                </h2>
+
+                <!-- List -->
+                <ul class="category-list">
+
+                    <li class="category-list__item">
+                        <a href="#" class="category-list__link">
+                            <strong class="category-list__item-title">
+                                Фаллоимитаторы
+                            </strong>
+                            <figure class="category-list__img-holder">
+                                <img src="img/category-img-1.jpg" alt="" class="category-list__img">
+                            </figure>
+                        </a>
+                    </li>
+
+                    <li class="category-list__item">
+                        <a href="#" class="category-list__link">
+                            <strong class="category-list__item-title">
+                                БДСМ и садо-мазо товары
+                            </strong>
+                            <figure class="category-list__img-holder">
+                                <img src="img/category-img-2.jpg" alt="" class="category-list__img">
+                            </figure>
+                        </a>
+                    </li>
+
+                    <li class="category-list__item">
+                        <a href="#" class="category-list__link">
+                            <strong class="category-list__item-title">
+                                Анальные игрушки
+                            </strong>
+                            <figure class="category-list__img-holder">
+                                <img src="img/category-img-3.jpg" alt="" class="category-list__img">
+                            </figure>
+                        </a>
+                    </li>
+
+                    <li class="category-list__item">
+                        <a href="#" class="category-list__link">
+                            <strong class="category-list__item-title">
+                                Секс товары для мужчин
+                            </strong>
+                            <figure class="category-list__img-holder">
+                                <img src="img/category-img-4.jpg" alt="" class="category-list__img">
+                            </figure>
+                        </a>
+                    </li>
+
+                    <li class="category-list__item">
+                        <a href="#" class="category-list__link">
+                            <strong class="category-list__item-title">
+                                Секс товары для женщин
+                            </strong>
+                            <figure class="category-list__img-holder">
+                                <img src="img/category-img-5.jpg" alt="" class="category-list__img">
+                            </figure>
+                        </a>
+                    </li>
+
+                    <li class="category-list__item">
+                        <a href="#" class="category-list__link">
+                            <strong class="category-list__item-title">
+                                Страпоны и фаллопротезы
+                            </strong>
+                            <figure class="category-list__img-holder">
+                                <img src="img/category-img-6.jpg" alt="" class="category-list__img">
+                            </figure>
+                        </a>
+                    </li>
+
+                    <li class="category-list__item">
+                        <a href="#" class="category-list__link">
+                            <strong class="category-list__item-title">
+                                Вибраторы
+                            </strong>
+                            <figure class="category-list__img-holder">
+                                <img src="img/category-img-7.jpg" alt="" class="category-list__img">
+                            </figure>
+                        </a>
+                    </li>
+
+                    <li class="category-list__item">
+                        <a href="#" class="category-list__link">
+                            <strong class="category-list__item-title">
+                                Косметика с феромонами
+                            </strong>
+                            <figure class="category-list__img-holder">
+                                <img src="img/category-img-8.jpg" alt="" class="category-list__img">
+                            </figure>
+                        </a>
+                    </li>
+
+                    <li class="category-list__item">
+                        <a href="#" class="category-list__link">
+                            <strong class="category-list__item-title">
+                                Смазки и лубриканты
+                            </strong>
+                            <figure class="category-list__img-holder">
+                                <img src="img/category-img-9.jpg" alt="" class="category-list__img">
+                            </figure>
+                        </a>
+                    </li>
+
+                    <li class="category-list__item">
+                        <a href="#" class="category-list__link">
+                            <strong class="category-list__item-title">
+                                Приятные мелочи
+                            </strong>
+                            <figure class="category-list__img-holder">
+                                <img src="img/category-img-10.jpg" alt="" class="category-list__img">
+                            </figure>
+                        </a>
+                    </li>
+
+                    <li class="category-list__item">
+                        <a href="#" class="category-list__link">
+                            <strong class="category-list__item-title">
+                                Секс мебель и качели
+                            </strong>
+                            <figure class="category-list__img-holder">
+                                <img src="img/category-img-11.jpg" alt="" class="category-list__img">
+                            </figure>
+                        </a>
+                    </li>
+
+                    <li class="category-list__item">
+                        <a href="#" class="category-list__link">
+                            <strong class="category-list__item-title">
+                                Эротическая одежда
+                            </strong>
+                            <figure class="category-list__img-holder">
+                                <img src="img/category-img-12.jpg" alt="" class="category-list__img">
+                            </figure>
+                        </a>
+                    </li>
+
+                    <li class="category-list__item">
+                        <a href="#" class="category-list__link">
+                            <strong class="category-list__item-title">
+                                Купальники
+                            </strong>
+                            <figure class="category-list__img-holder">
+                                <img src="img/category-img-13.jpg" alt="" class="category-list__img">
+                            </figure>
+                        </a>
+                    </li>
+
+                    <li class="category-list__item">
+                        <a href="#" class="category-list__link">
+                            <strong class="category-list__item-title">
+                                Трусики
+                            </strong>
+                            <figure class="category-list__img-holder">
+                                <img src="img/category-img-14.jpg" alt="" class="category-list__img">
+                            </figure>
+                        </a>
+                    </li>
+
+                    <li class="category-list__item">
+                        <a href="#" class="category-list__link">
+                            <strong class="category-list__item-title">
+                               Бюстгальтеры
+                            </strong>
+                            <figure class="category-list__img-holder">
+                                <img src="img/category-img-15.jpg" alt="" class="category-list__img">
+                            </figure>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- New -->
+    <section class="new">
+        <div class="container">
+            <div class="row">
+                <h2 class="caption">Новинка</h2>
+            </div>
+
+            <!-- Slider main container -->
+<div class="new-slider swiper-container">
+
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+
+      <!-- Slide -->
+      <div class="new-slider__item swiper-slide">
+          <span class="new-slider__item-label">new</span>
+          <img class="new-slider__item-img" src="img/new-slide-1.png" alt="">
+          <span class="new-slider__item-caption">
+            Фаллоимитатор-мулат с мошонкой на присоске Labour 
+        </span>
+        <span class="new-slider__item-code">
+            Код товара: 24835
+        </span>
+        <div class="new-slider__item-buy">
+            <div class="new-slider__item-buy--txt">
+                <span>
+                    Цена:
+                </span>
+                <strong>
+                    1.700 грн
+                </strong>
+            </div>
+
+            <a href="#" class="new-slider__item-buy--btn">Купить</a>
+        </div>
+      </div>
+
+      <!-- Slide -->
+      <div class="new-slider__item swiper-slide">
+        <span class="new-slider__item-label">new</span>
+        <img class="new-slider__item-img" src="img/new-slide-2.png" alt="">
+        <span class="new-slider__item-caption">
+            Телесный фаллоимитатор на присоске Peotillomania 
+        </span>
+        <span class="new-slider__item-code">
+            Код товара: 24835
+        </span>
+        
+        <div class="new-slider__item-buy">
+            <div class="new-slider__item-buy--txt">
+                <span>
+                    Цена:
+                </span>
+                <strong>
+                    1.700 грн
+                </strong>
+            </div>
+
+            <a href="#" class="new-slider__item-buy--btn">Купить</a>
+        </div>
+    </div>
+
+    <!-- Slide -->
+    <div class="new-slider__item swiper-slide">
+        <span class="new-slider__item-label">new</span>
+        <img class="new-slider__item-img" src="img/new-slide-3.png" alt="">
+        <span class="new-slider__item-caption">
+            Телесный фаллоимитатор на присоске Flatterer
+        </span>
+        <span class="new-slider__item-code">
+            Код товара: 24835
+        </span>
+        <div class="new-slider__item-buy">
+            <div class="new-slider__item-buy--txt">
+                <span>
+                    Цена:
+                </span>
+                <strong>
+                    1.700 грн
+                </strong>
+            </div>
+
+            <a href="#" class="new-slider__item-buy--btn">Купить</a>
+        </div>
+    </div>
+
+    <!-- Slide -->
+    <div class="new-slider__item swiper-slide">
+        <span class="new-slider__item-label">new</span>
+        <img class="new-slider__item-img" src="img/new-slide-4.png" alt="">
+        <span class="new-slider__item-caption">
+            Кофейный фаллоимитатор на присоске Peotillomania
+        </span>
+        <span class="new-slider__item-code">
+            Код товара: 24835
+        </span>
+        <div class="new-slider__item-buy">
+            <div class="new-slider__item-buy--txt">
+                <span>
+                    Цена:
+                </span>
+                <strong>
+                    1.700 грн
+                </strong>
+            </div>
+
+            <a href="#" class="new-slider__item-buy--btn">Купить</a>
+        </div>
+    </div>
+      
+    </div>
+    
+    <!-- Navigation -->
+    <div class="new-slider__nav">
+        <a href="#" class="new-slider__btn new-slider__btn--prev"></a>
+        <div class="new-slider__pagination"></div>
+        <a href="#" class="new-slider__btn new-slider__btn--next"></a>
+    </div>
+
+  </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+                <!-- Col -->
+                <div class="footer-col">
+                    <strong class="footer-caption">
+                        Покупателю
+                    </strong>
+                    <ul class="footer-list">
+                        <li class="footer-list__item">
+                            <a href="#" class="footer-list__link">
+                                Доставка и оплата
+                            </a>
+                        </li>
+                        <li class="footer-list__item">
+                            <a href="#" class="footer-list__link">
+                                Гарантия и возврат
+                            </a>
+                        </li>
+                        <li class="footer-list__item">
+                            <a href="#" class="footer-list__link">
+                                Конфиденциальность
+                            </a>
+                        </li>
+                        <li class="footer-list__item">
+                            <a href="#" class="footer-list__link">
+                                Карта сайта
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Col -->
+                <div class="footer-col">
+                    <strong class="footer-caption">
+                        Личный кабинет
+                    </strong>
+                    <ul class="footer-list">
+                        <li class="footer-list__item">
+                            <a href="#" class="footer-list__link">
+                                Личный кабинет
+                            </a>
+                        </li>
+                        <li class="footer-list__item">
+                            <a href="#" class="footer-list__link">
+                                История заказов
+                            </a>
+                        </li>
+                        <li class="footer-list__item">
+                            <a href="#" class="footer-list__link">
+                                Мои закладки
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Col -->
+                <div class="footer-col">
+                    <strong class="footer-caption">
+                        Контакты
+                    </strong>
+                    <ul class="footer-list footer-list__contact">
+                        <li class="footer-list__item">
+                            Пн-пт - с 09:00 до 18:00
+                        </li>
+                        <li class="footer-list__item">
+                            Сб, Вс - выходной
+                        </li>
+                        <li class="footer-list__item">
+                            <span class="footer-list__contact--addrr">
+                                г.Киев, Харьковское шоссе 2
+                                ИП Куприянова Юлия Сергеевна
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Col -->
+                <div class="footer-col">
+                    <strong class="footer-caption">
+                        7 800 100 04 94
+                    </strong>
+                    <ul class="footer-list">
+                        <li class="footer-list__item">
+                            <a href="#" class="footer-list__link">
+                                Интернет-магазин
+                            </a>
+                        </li>
+                        <li class="footer-list__item">
+                            <a href="#" class="footer-list__link footer-list__link--viber">
+                                <img src="img/viber-icon.svg" alt="">
+                                <span class="viber-link">
+                                    Связаться через Viber
+                                </span>
+                            </a>
+                        </li>
+                        <li class="footer-list__item">
+                            <a href="#" class="footer-list__link footer-list__link--telegram">
+                                <img src="img/telegram_icon.svg" alt="">
+                                <span class="telegram-link">
+                                    Связаться через Telegram
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- js -->
+    <script src="js/libs.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
